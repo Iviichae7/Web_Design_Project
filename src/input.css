@@ -8,7 +8,7 @@
     background-position: center;
     margin: 0;
     padding: 0; 
-    height: 100vw;
+    height: 100vw; 
     object-fit: cover;
     position: relative;
 
@@ -16,8 +16,25 @@
 }
 
 .Menu_text {
-    position: absolute;
-    right: 0;
+    font-size:x-large;
+    color: white;
+    border: 2px solid #FF3131; 
+    padding: 10px; 
+    background-color: #FF3131;
+    width: fit-content;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Menu_img img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw; 
+    height: 90vh;
+    border-radius: 15px;
+    object-fit: cover;
 }
 
 * {

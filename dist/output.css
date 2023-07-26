@@ -989,9 +989,34 @@ video {
   position: relative;
 }
 
+.Menu_Button {
+  font-size:x-large;
+  color: white;
+  border: 2px solid #FF3131;
+  padding: 10px;
+  background-color: #FF3131;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .Menu_text {
-  position: absolute;
-  right: 0;
+  background-color: #FF3131;
+  border-radius: 20px;
+  padding: 20px;
+  color: #FFDE59;
+  line-height: 3;
+  text-align: center;
+  font-size: larger;
+  font-family: 'Lato', sans-serif;
+  font-family: 'League Spartan', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.Menu_img h1 {
+  font-size: larger;
 }
 
 * {
@@ -1004,7 +1029,7 @@ video {
 }
 
 #GalleryBody{
-  background-color: #ffd59f
+  background-color: #FFDE59;
 }
 
 #GalleryCard{
@@ -1019,11 +1044,19 @@ video {
 }
 
 #GalleryH3{
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: 'Lato', sans-serif;
 }
 
 #GalleryH5{
-  font-family: 'Comfortaa', cursive;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.carousel-control-prev{
+  background-color: #FF3131;
+}
+
+.carousel-control-next{
+  background-color:#FF3131;
 }
 
 .hover\:bg-\[\#efe227\]:hover {
@@ -1155,3 +1188,4 @@ video {
     width: 16rem;
   }
 }
+

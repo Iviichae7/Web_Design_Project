@@ -81,3 +81,12 @@
     font-family: 'Comfortaa', cursive;
 
 }
+
+.carousel-control-prev{
+    background-color: #FF3131;
+}
+
+.carousel-control-next{
+    background-color: #FF3131;
+}
+

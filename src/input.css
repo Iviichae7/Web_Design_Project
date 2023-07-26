@@ -87,29 +87,3 @@
 .header {
     font-size: 50px;
 }
-
-
-#GalleryBody{
-
-    background-color: #ffd59f
-}
-
-#GalleryCard{
-    margin-top: 40px;
-    text-align: center;  
-}
-
-.carousel-item{
-    padding: 5%;
-    max-width: 500px;
-    margin-left: 28%;
-}
-
-#GalleryH3{
-    font-family: 'Balsamiq Sans', cursive;
-
-}
-#GalleryH5{
-    font-family: 'Comfortaa', cursive;
-
-}

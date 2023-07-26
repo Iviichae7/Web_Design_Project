@@ -59,7 +59,7 @@
 
 #GalleryBody{
 
-    background-color: #ffd59f
+    background-color: #FFDE59;
 }
 
 #GalleryCard{
@@ -74,11 +74,13 @@
 }
 
 #GalleryH3{
-    font-family: 'Balsamiq Sans', cursive;
+    
+    font-family: 'Lato', sans-serif;
 
 }
 #GalleryH5{
-    font-family: 'Comfortaa', cursive;
+
+    font-family: 'League Spartan', sans-serif;
 
 }
 
@@ -87,6 +89,6 @@
 }
 
 .carousel-control-next{
-    background-color: #FF3131;
+    background-color:#FF3131;
 }
 

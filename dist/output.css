@@ -981,12 +981,24 @@ video {
   background-image: url('../images/IMG_0107.jpeg');
   background-size: cover;
   background-position: center;
-  margin: 0;
+  margin: 100px 0 0 0;
   padding: 0;
-  height: 100vw;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 15px;
   position: relative;
+  float: right;
+}
+
+.Menu_Welcome {
+  margin-top: 100px;
+  font-size: 30px;
+  border: 2px grey;
+}
+
+.Menu_Description {
+  font-size: 20px;
 }
 
 .Menu_Button {
@@ -1013,6 +1025,35 @@ video {
   font-family: 'Lato', sans-serif;
   font-family: 'League Spartan', sans-serif;
   font-family: 'Roboto Condensed', sans-serif;
+  clear: both;
+}
+
+.Menu_Header {
+  font-size:xx-large;
+}
+
+.Menu_Marg {
+  font-size: x-large;
+}
+
+.Menu_Pep {
+  font-size: x-large;
+}
+
+.Menu_Ruc {
+  font-size: x-large;
+}
+
+.Menu_Sweet {
+  font-size: x-large;
+}
+
+.Menu_Gar {
+  font-size: x-large;
+}
+
+.Allergens {
+  font-size: x-large;
 }
 
 .Menu_img h1 {
@@ -1026,37 +1067,6 @@ video {
 
 .header {
   font-size: 50px;
-}
-
-#GalleryBody{
-  background-color: #FFDE59;
-}
-
-#GalleryCard{
-  margin-top: 40px;
-  text-align: center;
-}
-
-.carousel-item{
-  padding: 5%;
-  max-width: 500px;
-  margin-left: 28%;
-}
-
-#GalleryH3{
-  font-family: 'Lato', sans-serif;
-}
-
-#GalleryH5{
-  font-family: 'League Spartan', sans-serif;
-}
-
-.carousel-control-prev{
-  background-color: #FF3131;
-}
-
-.carousel-control-next{
-  background-color:#FF3131;
 }
 
 .hover\:bg-\[\#efe227\]:hover {
@@ -1188,4 +1198,3 @@ video {
     width: 16rem;
   }
 }
-

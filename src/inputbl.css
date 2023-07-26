@@ -1,0 +1,32 @@
+#GalleryBody{
+
+    background-color: #ffd59f
+}
+
+#GalleryCard{
+    margin-top: 40px;
+    text-align: center;  
+}
+
+.carousel-item{
+    padding: 5%;
+    max-width: 500px;
+    margin-left: 28%;
+}
+
+#GalleryH3{
+    font-family: 'Lato', sans-serif;
+
+}
+#GalleryH5{
+    font-family: 'League Spartan', sans-serif;
+
+}
+
+.carousel-control-prev-icon{
+    background-color:  #FF3131;
+}
+
+.carousel-control-next-icon{
+    background-color: #FF3131;
+}

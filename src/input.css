@@ -15,11 +15,12 @@
     
 }
 
-.Menu_text {
+.Menu_Button {
     font-size:x-large;
     color: white;
     border: 2px solid #FF3131; 
     padding: 10px; 
+    
     background-color: #FF3131;
     width: fit-content;
     border-radius: 15px;
@@ -27,14 +28,23 @@
     margin-right: auto;
 }
 
-.Menu_img img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90vw; 
-    height: 90vh;
-    border-radius: 15px;
-    object-fit: cover;
+
+.Menu_text {
+   background-color: #FF3131;
+   border-radius: 20px;
+   padding: 20px;
+   color: #FFDE59;
+   line-height: 3;
+   text-align: center;
+   font-size: larger;
+   font-family: 'Lato', sans-serif;
+   font-family: 'League Spartan', sans-serif;
+   font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.Menu_img h1 {
+    font-size: larger;
 }
 
 * {

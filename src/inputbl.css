@@ -1,6 +1,25 @@
+:root {
+
+    /* 400 */
+  
+    --normal-font: "Inconsolata", sans-serif;
+  
+    /* 700 */
+  
+    --heading-font: "Inconsolata", sans-serif;
+  
+    /* 300 */
+  
+    --accent-font: "Inconsolata", sans-serif;
+  
+  }
+
+
+
+
 #GalleryBody{
 
-    background-color: #ffd59f
+    background-color: #FFDE59;
 }
 
 #GalleryCard{

@@ -1069,29 +1069,6 @@ video {
   font-size: 50px;
 }
 
-#GalleryBody{
-  background-color: #ffd59f
-}
-
-#GalleryCard{
-  margin-top: 40px;
-  text-align: center;
-}
-
-.carousel-item{
-  padding: 5%;
-  max-width: 500px;
-  margin-left: 28%;
-}
-
-#GalleryH3{
-  font-family: 'Balsamiq Sans', cursive;
-}
-
-#GalleryH5{
-  font-family: 'Comfortaa', cursive;
-}
-
 .hover\:bg-\[\#efe227\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(239 226 39 / var(--tw-bg-opacity));

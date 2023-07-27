@@ -25,13 +25,13 @@
           <div class="flex items-center justify-between">
             <!-- Logo -->
             <div class="w-20">
-              <img class="rounded-full" src="/images/logo.png" alt="logo" />
+              <img class="rounded-full cursor-pointer" src="/images/logo.png" alt="logo" href="/src/index.html" />
             </div>
             <!-- Menu -->
             <div class="hidden md:flex items-center space-x-8">
-              <a class="text-white text-xl" href="">Home</a>
-              <a class="text-white text-xl" href="">Services</a>
-              <a class="text-white text-xl" href="">Menu</a>
+              <a class="text-white text-xl" href="/src/index.html">Home</a>
+              <a class="text-white text-xl" href="#services">Services</a>
+              <a class="text-white text-xl" href="/src/menu.html">Menu</a>
               <a class="text-white text-xl" href="">About Us</a>
               <a class="text-white text-xl" href="">Gallery</a>
               <!-- Button -->
@@ -52,11 +52,11 @@
       <div id="mobile-menu" class="hidden md:hidden bg-white/20 text-white p-6 h-5/6 rounded-xl">
         <div class="flex flex-col items-center space-y-10">
           <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
-            href="">Home</a>
+            href="/src/index.html">Home</a>
           <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
-            href="">Services</a>
+            href="#services">Services</a>
           <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
-            href="">Menu</a>
+            href="/src/menu.html">Menu</a>
           <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
             href="">About
             Us</a>
@@ -115,7 +115,7 @@
 
 
   <!-------------------------------------------------- Services -------------------------------------------------->
-  <div class="px-4 py-10 bg-test pb-20">
+  <div id="services" class="px-4 py-10 bg-test pb-20">
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
       <h2 class="font-semibold text-4xl text-gray-800 leading-tight text-center my-10">
         Our Services

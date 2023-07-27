@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--Link to input.css-->
     <link rel="stylesheet" href="input.css">
+    <!--nav bar style link-->
     <link href="/dist/output.css" rel="stylesheet" />
-
+    <!--Link to menu.js-->
+    <script src="menu.js"></script>
+    <!--link to google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100&family=League+Spartan:wght@500&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100&family=League+Spartan:wght@500&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <!--link to Second google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;700&family=Mukta&display=swap"
+
+    rel="stylesheet">
 </head>
         <!-- Navbar -->
         <nav class="absolute top-0 left-0 w-full z-10">
@@ -35,13 +45,18 @@
             </div>
 
 <body>
-    <div class="Background_Item"></div>
-    <div class="Menu_Welcome">
-      <h1>Crumb Pizza Menu</h1>
-    </div>
-    <div class="Menu_Description">
-      <p>Dive into our mouth-watering pizza menu.Crafted with the freshest ingredients and an unending passion for the perfect pie, our pizzas are more than just a meal - they're an experience.</p>
-    </div>
+  <div class="First_Page">
+      <div class="Menu_Welcome">
+        <h1>Crumb Pizza Menu</h1>
+      </div>
+        <!--Opening text-->
+        <div class="Menu_Description">
+        <p>Dive into our mouth-watering pizza menu.Crafted with the freshest ingredients and an unending passion for the perfect pie, our pizzas are more than just a meal - they're an experience.</p>
+        </div>
+          <!--Menu scroll button-->
+          <button onclick="scrollDown()" class="scrollButton" style="display:none;">Menu</button>
+  </div>
+    <!--Menu Page-->
     <div id="Second_Page" class="Menu_text"> 
         <p class="Menu_Header">Menu</p>
         <p class="Menu_Marg">Margherita - 10 </p>

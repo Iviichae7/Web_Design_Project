@@ -2,43 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-.Background_Item {
+:root {
+
+    /* 400 */
+    --normal-font: "Inconsolata", sans-serif;
+    /* 700 */
+    --heading-font: "Inconsolata", sans-serif;
+    /* 300 */
+    --accent-font: "Inconsolata", sans-serif;
+  
+  }
+
+
+.First_Page{
+    padding-bottom: 1000px ;
     background-image: url('../images/IMG_0107.jpeg');
     background-size: cover;
     background-position: center;
-    margin: 100px 0 0 0;
-    padding: 0;
-    width: 300px;  
-    height: 300px;  
-    overflow: hidden;  
-    border-radius: 15px;  
-    position: relative;
-    float: right;
-
-    
+    padding: 500px;
 }
+
 .Menu_Welcome {
     margin-top: 100px;
     font-size: 30px;
     border: 2px grey;
+    font-family: var(--heading-font);
+    font: bold;
+    position: relative;
+    marging-top: 40%
 }
 .Menu_Description {
     font-size: 20px;
-}
+    font-family: var(--normal-font);
+}    
 
-.Menu_Button {
-    font-size:x-large;
-    color: white;
-    border: 2px solid #FF3131; 
-    padding: 10px; 
-    
+.scrollButton {
+    position: fixed;
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    padding: 10px;
+    font-size: 1em;
+    color: #FFDE59; 
     background-color: #FF3131;
-    width: fit-content;
+    border: none;
+    cursor: pointer;
     border-radius: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
+}
 
 .Menu_text {
    background-color: #FF3131;
@@ -77,11 +88,6 @@
 }
 .Menu_img h1 {
     font-size: larger;
-}
-
-* {
-    padding: 0;
-    margin: 0;
 }
 
 .header {

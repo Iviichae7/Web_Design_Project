@@ -3,98 +3,110 @@
 @tailwind utilities;
 
 :root {
+  /* 400 */
+  --normal-font: "Inconsolata", sans-serif;
+  /* 700 */
+  --heading-font: "Inconsolata", sans-serif;
+  /* 300 */
+  --accent-font: "Inconsolata", sans-serif;
 
-    /* 400 */
-    --normal-font: "Inconsolata", sans-serif;
-    /* 700 */
-    --heading-font: "Inconsolata", sans-serif;
-    /* 300 */
-    --accent-font: "Inconsolata", sans-serif;
-  
-  }
+  --background-colour: linear-gradient(
+    to right top,
+    #ffffff,
+    #f1dffa,
+    #f3bbe8,
+    #fc93c4,
+    #ff6790,
+    #ff6172,
+    #ff624f,
+    #ff6b26,
+    #ff8b26,
+    #ffa82f,
+    #ffc441,
+    #ffde59
+  );
+}
 
+.bg-test {
+  background-image: var(--background-colour);
+}
 
-.First_Page{
-    padding-bottom: 1000px ;
-    background-image: url('../images/IMG_0107.jpeg');
-    background-size: cover;
-    background-position: center;
-    padding: 500px;
+.First_Page {
+  padding-bottom: 1000px;
+  background-image: url("../images/IMG_0107.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 500px;
 }
 
 .Menu_Welcome {
-    font-size: 30px;
-    font-family: var(--heading-font);
-    font-weight: bold;
-    position: relative;
-    margin-top: 40%; 
-  
-
-    
+  font-size: 30px;
+  font-family: var(--heading-font);
+  font-weight: bold;
+  position: relative;
+  margin-top: 40%;
 }
 .Menu_Description {
-    font-size: 20px;
-    font-family: var(--normal-font);
-}    
+  font-size: 20px;
+  font-family: var(--normal-font);
+}
 
 .scrollButton {
-    position: fixed;
-    bottom: 10px; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    padding: 10px;
-    font-size: 1em;
-    color: #FFDE59; 
-    background-color: #FF3131;
-    border: none;
-    cursor: pointer;
-    border-radius: 15px;
-
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  font-size: 1em;
+  color: #ffde59;
+  background-color: #ff3131;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
 }
 
 .Menu_text {
-   background-color: #FF3131;
-   border-radius: 20px;
-   padding: 20px;
-   color: #FFDE59;
-   line-height: 3;
-   text-align: center;
-   font-size: larger;
-   font-family: 'Lato', sans-serif;
-   font-family: 'League Spartan', sans-serif;
-   font-family: 'Roboto Condensed', sans-serif;
-   clear: both;
-   width: 80%;
-   height: 80%;
-   margin: 0 auto;
-   overflow: auto;
-
+  background-color: #ff3131;
+  border-radius: 20px;
+  padding: 20px;
+  color: #ffde59;
+  line-height: 3;
+  text-align: center;
+  font-size: larger;
+  font-family: "Lato", sans-serif;
+  font-family: "League Spartan", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  clear: both;
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  overflow: auto;
 }
 .Menu_Header {
-    font-size:xx-large;
+  font-size: xx-large;
 }
 .Menu_Marg {
-    font-size: x-large;
+  font-size: x-large;
 }
 .Menu_Pep {
-    font-size: x-large;
+  font-size: x-large;
 }
 .Menu_Ruc {
-    font-size: x-large;
+  font-size: x-large;
 }
 .Menu_Sweet {
-    font-size: x-large;
+  font-size: x-large;
 }
 .Menu_Gar {
-    font-size: x-large;
+  font-size: x-large;
 }
 .Allergens {
-    font-size: x-large;
+  font-size: x-large;
 }
 .Menu_img h1 {
-    font-size: larger;
+  font-size: larger;
 }
 
 .header {
-    font-size: 50px;
+  font-size: 50px;
 }

@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -191,10 +191,6 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
-  font-feature-settings: inherit;
-  /* 1 */
-  font-variation-settings: inherit;
-  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -342,14 +338,6 @@ ul,
 menu {
   list-style: none;
   margin: 0;
-  padding: 0;
-}
-
-/*
-Reset default styling for dialogs.
-*/
-
-dialog {
   padding: 0;
 }
 
@@ -889,6 +877,10 @@ video {
   padding-top: 2.5rem;
 }
 
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -992,11 +984,30 @@ video {
   --heading-font: "Inconsolata", sans-serif;
   /* 300 */
   --accent-font: "Inconsolata", sans-serif;
+  --background-colour: linear-gradient(
+    to right top,
+    #ffffff,
+    #f1dffa,
+    #f3bbe8,
+    #fc93c4,
+    #ff6790,
+    #ff6172,
+    #ff624f,
+    #ff6b26,
+    #ff8b26,
+    #ffa82f,
+    #ffc441,
+    #ffde59
+  );
 }
 
-.First_Page{
-  padding-bottom: 1000px ;
-  background-image: url('../images/IMG_0107.jpeg');
+.bg-test {
+  background-image: var(--background-colour);
+}
+
+.First_Page {
+  padding-bottom: 1000px;
+  background-image: url("../images/IMG_0107.jpeg");
   background-size: cover;
   background-position: center;
   padding: 500px;
@@ -1022,24 +1033,24 @@ video {
   transform: translateX(-50%);
   padding: 10px;
   font-size: 1em;
-  color: #FFDE59;
-  background-color: #FF3131;
+  color: #ffde59;
+  background-color: #ff3131;
   border: none;
   cursor: pointer;
   border-radius: 15px;
 }
 
 .Menu_text {
-  background-color: #FF3131;
+  background-color: #ff3131;
   border-radius: 20px;
   padding: 20px;
-  color: #FFDE59;
+  color: #ffde59;
   line-height: 3;
   text-align: center;
   font-size: larger;
-  font-family: 'Lato', sans-serif;
-  font-family: 'League Spartan', sans-serif;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "League Spartan", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   clear: both;
   width: 80%;
   height: 80%;
@@ -1048,7 +1059,7 @@ video {
 }
 
 .Menu_Header {
-  font-size:xx-large;
+  font-size: xx-large;
 }
 
 .Menu_Marg {

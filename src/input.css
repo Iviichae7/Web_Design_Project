@@ -10,21 +10,24 @@
   /* 300 */
   --accent-font: "Inconsolata", sans-serif;
 
-  --background-colour: linear-gradient(
-    to right top,
-    #ffffff,
-    #f1dffa,
-    #f3bbe8,
-    #fc93c4,
-    #ff6790,
-    #ff6172,
-    #ff624f,
-    #ff6b26,
-    #ff8b26,
-    #ffa82f,
-    #ffc441,
-    #ffde59
-  );
+  --background-colour: linear-gradient(to right top,
+      #ffffff,
+      #f1dffa,
+      #f3bbe8,
+      #fc93c4,
+      #ff6790,
+      #ff6172,
+      #ff624f,
+      #ff6b26,
+      #ff8b26,
+      #ffa82f,
+      #ffc441,
+      #ffde59);
+}
+
+.active-link {
+  color: #ff3131;
+  border: 2px solid #ff3131;
 }
 
 .bg-test {
@@ -46,6 +49,7 @@
   position: relative;
   margin-top: 40%;
 }
+
 .Menu_Description {
   font-size: 20px;
   font-family: var(--normal-font);
@@ -82,27 +86,35 @@
   margin: 0 auto;
   overflow: auto;
 }
+
 .Menu_Header {
   font-size: xx-large;
 }
+
 .Menu_Marg {
   font-size: x-large;
 }
+
 .Menu_Pep {
   font-size: x-large;
 }
+
 .Menu_Ruc {
   font-size: x-large;
 }
+
 .Menu_Sweet {
   font-size: x-large;
 }
+
 .Menu_Gar {
   font-size: x-large;
 }
+
 .Allergens {
   font-size: x-large;
 }
+
 .Menu_img h1 {
   font-size: larger;
 }

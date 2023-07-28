@@ -23,7 +23,7 @@ document.getElementById('mobile-nav').addEventListener('click', toggleCTA);
 
 // Updates links on click
 navLinks.forEach(link => {
-  link.addEventListener('click', function (e) {
+  link.addEventListener('click', function () {
 
     // removes the class from all links in nav
     navLinks.forEach(link => link.classList.remove('active-link'));

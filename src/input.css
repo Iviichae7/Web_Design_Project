@@ -10,21 +10,38 @@
   /* 300 */
   --accent-font: "Inconsolata", sans-serif;
 
-  --background-colour: linear-gradient(to right top,
-      #ffffff,
-      #f1dffa,
-      #f3bbe8,
-      #fc93c4,
-      #ff6790,
-      #ff6172,
-      #ff624f,
-      #ff6b26,
-      #ff8b26,
-      #ffa82f,
-      #ffc441,
-      #ffde59);
-}
+  --background-colour: linear-gradient(
+    to right top,
+    #ffffff,
+    #f1dffa,
+    #f3bbe8,
+    #fc93c4,
+    #ff6790,
+    #ff6172,
+    #ff624f,
+    #ff6b26,
+    #ff8b26,
+    #ffa82f,
+    #ffc441,
+    #ffde59
+  );
 
+  --background-colour-2: linear-gradient(
+    to left bottom,
+    #ffffff,
+    #f1dffa,
+    #f3bbe8,
+    #fc93c4,
+    #ff6790,
+    #ff6172,
+    #ff624f,
+    #ff6b26,
+    #ff8b26,
+    #ffa82f,
+    #ffc441,
+    #ffde59
+  );
+}
 
 .active-link {
   color: #ff3131;
@@ -33,6 +50,10 @@
 
 .bg-test {
   background-image: var(--background-colour);
+}
+
+.bg-test2 {
+  background-image: var(--background-colour-2);
 }
 
 .First_Page {
@@ -47,7 +68,8 @@
   padding: 10px;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.8); /* This is equivalent to bg-black/80 */
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .Menu_Welcome {
@@ -56,8 +78,6 @@
   font-weight: bold;
   position: relative;
   color: white;
-
-
 }
 
 .Menu_Description {

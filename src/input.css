@@ -170,9 +170,13 @@
 /*Beginning of about.html */
 
 .Story_Text h1 {
-  font-size: l;
+  font-family: var(--heading-font);
+  font-weight: bold;
 }
 
-.Story_Text h2, h3 {
+.Story_Text p {
   font-family: var(--normal-font);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }

@@ -56,22 +56,31 @@
   background-image: var(--background-colour-2);
 }
 
+/* Background image */
 .First_Page {
   background-image: url("../images/IMG_0107.jpeg");
-  background-size: cover;
+  background-size: cover !important;
   background-position: center;
-  padding: 100px;
+  padding: 100px !important;
+  height: 100vh !important;
+  width: 100% !important;
+  padding-bottom: 1000px !important;
 }
 
+/* Main Text Box*/
 .Menu_box {
   border: 2px solid black;
   padding: 10px;
   border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.8); /* This is equivalent to bg-black/80 */
+  background-color: rgba(0, 0, 0, 0.8); 
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  position: sticky !important; 
+  top: 300px; 
+
 }
 
+/* Main Text Heading */
 .Menu_Welcome {
   font-size: 30px;
   font-family: var(--heading-font);
@@ -80,12 +89,14 @@
   color: white;
 }
 
+/* Main Text */
 .Menu_Description {
   font-size: 20px;
   font-family: var(--normal-font);
   color: white;
 }
 
+/* Menu Button */
 .scrollButton {
   position: fixed;
   bottom: 10px;
@@ -152,4 +163,16 @@
 
 .header {
   font-size: 50px;
+}
+
+/* End of menu.html */
+
+/*Beginning of about.html */
+
+.Story_Text h1 {
+  font-size: l;
+}
+
+.Story_Text h2, h3 {
+  font-family: var(--normal-font);
 }

@@ -1,91 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--Link to input.css-->
-    <link rel="stylesheet" href="input.css">
-    <!--nav bar style link-->
-    <link href="/dist/output.css" rel="stylesheet" />
-    <!--Link to menu.js-->
-    <script src="menu.js"></script>
-    <!--link to google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100&family=League+Spartan:wght@500&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
-    <!--link to Second google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;700&family=Mukta&display=swap"
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--Link to input.css-->
+  <link rel="stylesheet" href="input.css">
+  <!--nav bar style link-->
+  <link href="/dist/output.css" rel="stylesheet" />
+  <!--Link to menu.js-->
+  <script defer src="menu.js"></script>
+  <!--Link to main.js-->
+  <script defer src="main.js"></script>
+  <!--link to google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100&family=League+Spartan:wght@500&family=Roboto+Condensed:wght@700&display=swap"
+    rel="stylesheet">
+  <!--link to Second google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;700&family=Mukta&display=swap"
     rel="stylesheet">
 </head>
-        <!-- Navbar -->
-        <div class="absolute left-0 right-0 flex flex-col justify-between h-full">
-          <nav class="w-full z-10 bg-black/80 shadow-md">
-            <div class="container mx-auto px-6 md:px-4 lg:px-8 py-6">
-              <div class="flex items-center justify-between">
-                <!-- Logo -->
-                <div class="w-20">
-                  <img class="rounded-full cursor-pointer" src="/images/logo.png" alt="logo" href="/src/index.html" />
-                </div>
-                <!-- Menu -->
-                <div class="hidden md:flex items-center space-x-8">
-                  <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg active-link"
-                    href="/src/index.html">Home</a>
-                  <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
-                    href="#services">Services</a>
-                  <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
-                    href="/src/menu.html">Menu</a>
-                  <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
-                    href="/src/about.html">About Us</a>
-                  <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
-                    href="/src/gallery.html">Gallery</a>
-                  <!-- Button -->
-                  <button class="bg-[#ff3131] text-white px-4 py-2 rounded-xl cursor-pointer md:py-2">Contact Us</button>
-                </div>
-                <!-- Mobile Button -->
-                <div class="md:hidden">
-                  <button id="mobile-nav" class="text-white text-6xl">
-                    ☰
-                  </button>
-                </div>
-              </div>
-            </div>
-          </nav>
 
 <body>
-  <!--First text-->
-  <div class="First_Page">
-    <div class="Menu_box">
-      <div class="Menu_Welcome">
-        <h1>Crumb Pizza Menu</h1>
+  <!-- Navbar -->
+  <div class="absolute left-0 right-0 flex flex-col justify-between h-full">
+    <nav class="w-full z-10 bg-black/80 shadow-md">
+      <div class="container mx-auto px-6 md:px-4 lg:px-8 py-6">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="w-20">
+            <img class="rounded-full cursor-pointer" src="/images/logo.png" alt="logo" href="/src/index.html" />
+          </div>
+          <!-- Menu -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg active-link"
+              href="/src/index.html">Home</a>
+            <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
+              href="/src/index.html">Services</a>
+            <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
+              href="/src/menu.html">Menu</a>
+            <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
+              href="/src/about.html">About Us</a>
+            <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
+              href="/src/gallery.html">Gallery</a>
+            <!-- Button -->
+            <button class="bg-[#ff3131] text-white px-4 py-2 rounded-xl cursor-pointer md:py-2">Contact Us</button>
+          </div>
+          <!-- Mobile Button -->
+          <div class="md:hidden">
+            <button id="mobile-nav" class="text-white text-6xl">
+              ☰
+            </button>
+          </div>
+        </div>
       </div>
+    </nav>
+    <!-------------------------------------------------- Mobile Menu -------------------------------------------------->
+    <div id="mobile-menu" class="hidden md:hidden bg-white/20 text-white p-6 h-5/6 rounded-xl">
+      <div class="flex flex-col items-center space-y-10">
+        <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
+          href="/src/index.html">Home</a>
+        <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
+          href="#services">Services</a>
+        <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
+          href="/src/menu.html">Menu</a>
+        <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
+          href="/src/about.html">About
+          Us</a>
+        <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
+          href="/src/gallery.html">Gallery</a>
+        <!-- Mobile Button -->
+        <button class="bg-[#ff3131] text-white px-4 py-2 rounded-xl cursor-pointer block mt-2">Contact
+          Us</button>
+      </div>
+    </div>
+    <!-------------------------------------------------- End of Mobile Menu -------------------------------------------------->
+
+    <!--First text-->
+    <div class="First_Page">
+      <div class="Menu_box">
+        <div class="Menu_Welcome">
+          <h1>Crumb Pizza Menu</h1>
+        </div>
         <!--Opening text-->
         <div class="Menu_Description">
-        <p>Dive into our mouth-watering pizza menu.</p>
-        <p>Crafted with the freshest ingredients and an unending passion for the perfect pie, our pizzas are more than just a meal - they're an experience.</p>
+          <p>Dive into our mouth-watering pizza menu.</p>
+          <p>Crafted with the freshest ingredients and an unending passion for the perfect pie, our pizzas are more than
+            just a meal - they're an experience.</p>
         </div>
-          <!--Menu scroll button-->
-          <button onclick="scrollDown()" class="scrollButton" style="display:none;">View Menu</button>
-    </div>      
-  </div>
+        <!--Menu scroll button-->
+        <button onclick="scrollDown()" class="scrollButton" style="display:none;">View Menu</button>
+      </div>
+    </div>
     <!--Menu Page-->
-    <div id="Second_Page" class="Menu_text"> 
-        <p class="Menu_Header">Menu</p>
-        <p class="Menu_Marg">Margherita - 10 </p>
-        <p>Crushed Tomatoes, Mozzarella, Parmigiano Reggiano, Fresh Basil, Olive Oil (1,7) </p>
-        <p class="Menu_Pep">Pepperoni - 11 </p>
-        <p>Crushed Tomatoes, Mozzarella, Pepperoni, Parmigiano Reggiano, Fresh Basil  (1, 7) </p>
-        <p class="Menu_Ruc">Rucola - 11 </p>
-        <p>Crushed Tomatoes, Mozzarella, Cherry Tomatoes, Rocket, Parmigiano Reggiano, Balsamic Vinegar (1, 7, 11)</p>
-        <p class="Menu_Sweet">Sweet N’Spicy - 11 </p>
-        <p>Crushed Tomatoes, Mozzarella, Chorizo, Honey, Chilli Flakes, Parmigiano Reggiano (1, 7)</p>
-        <p class="Menu_Gar">Garlic Bread - 9 </p>
-        <p>Garlic Oil, Mozzarella, Rosemary, Parmigiano Reggiano (1,7)</p>
-        <p class="Allergens">Allergens List</p>
-        <p>1. Gluten 2. Sesame Seeds 3. Eggs 4. Fish 5. Peanuts 6. Soybeans 7. Dairy 8. Nuts 9. Celery 10. Mustard 11. Sulphur Dioxide 12. Molluscs 13. Lupin 14. Crustaceans</p>
+    <div id="Second_Page" class="Menu_text">
+      <p class="Menu_Header">Menu</p>
+      <p class="Menu_Marg">Margherita - 10 </p>
+      <p>Crushed Tomatoes, Mozzarella, Parmigiano Reggiano, Fresh Basil, Olive Oil (1,7) </p>
+      <p class="Menu_Pep">Pepperoni - 11 </p>
+      <p>Crushed Tomatoes, Mozzarella, Pepperoni, Parmigiano Reggiano, Fresh Basil (1, 7) </p>
+      <p class="Menu_Ruc">Rucola - 11 </p>
+      <p>Crushed Tomatoes, Mozzarella, Cherry Tomatoes, Rocket, Parmigiano Reggiano, Balsamic Vinegar (1, 7, 11)</p>
+      <p class="Menu_Sweet">Sweet N’Spicy - 11 </p>
+      <p>Crushed Tomatoes, Mozzarella, Chorizo, Honey, Chilli Flakes, Parmigiano Reggiano (1, 7)</p>
+      <p class="Menu_Gar">Garlic Bread - 9 </p>
+      <p>Garlic Oil, Mozzarella, Rosemary, Parmigiano Reggiano (1,7)</p>
+      <p class="Allergens">Allergens List</p>
+      <p>1. Gluten 2. Sesame Seeds 3. Eggs 4. Fish 5. Peanuts 6. Soybeans 7. Dairy 8. Nuts 9. Celery 10. Mustard 11.
+        Sulphur Dioxide 12. Molluscs 13. Lupin 14. Crustaceans</p>
     </div>
 
     <!--Footer beginning-->
@@ -105,7 +132,7 @@
       </div>
     </footer>
     <!-------------------------------------------------- End of Footer -------------------------------------------------->
-  
+
     <!-------------------------------------------------- Copyright -------------------------------------------------->
     <div class="bg-neutral-300 p-4 text-center text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200">
       © 2023 Copyright:
@@ -113,7 +140,8 @@
     </div>
 
 
-    
+
 
 </body>
+
 </html>

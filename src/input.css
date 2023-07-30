@@ -10,50 +10,24 @@
   /* 300 */
   --accent-font: "Inconsolata", sans-serif;
 
-  --background-colour: linear-gradient(
-    to right top,
-    #ffffff,
-    #f1dffa,
-    #f3bbe8,
-    #fc93c4,
-    #ff6790,
-    #ff6172,
-    #ff624f,
-    #ff6b26,
-    #ff8b26,
-    #ffa82f,
-    #ffc441,
-    #ffde59
-  );
-
-  --background-colour-2: linear-gradient(
-    to left bottom,
-    #ffffff,
-    #f1dffa,
-    #f3bbe8,
-    #fc93c4,
-    #ff6790,
-    #ff6172,
-    #ff624f,
-    #ff6b26,
-    #ff8b26,
-    #ffa82f,
-    #ffc441,
-    #ffde59
-  );
+  --background-colour: linear-gradient(to right top,
+      #ffffff,
+      #f1dffa,
+      #f3bbe8,
+      #fc93c4,
+      #ff6790,
+      #ff6172,
+      #ff624f,
+      #ff6b26,
+      #ff8b26,
+      #ffa82f,
+      #ffc441,
+      #ffde59);
 }
 
 .active-link {
   color: #ff3131;
   border: 2px solid #ff3131;
-}
-
-.bg-test {
-  background-image: var(--background-colour);
-}
-
-.bg-test2 {
-  background-image: var(--background-colour-2);
 }
 
 /* Background image */
@@ -72,11 +46,11 @@
   border: 2px solid black;
   padding: 10px;
   border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.8); 
+  background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  position: sticky !important; 
-  top: 300px; 
+  position: sticky !important;
+  top: 300px;
 
 }
 

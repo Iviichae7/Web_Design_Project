@@ -29,7 +29,7 @@ const toggleCTA = () => {
   }
 }
 
-// Updates links on click
+// Updates links on click and when the page loads
 const updateActiveLink = () => {
   navLinks.forEach(link => {
     link.classList.remove('active-link');
@@ -44,11 +44,15 @@ const updateActiveLink = () => {
       // Add active-link class to the clicked link
       this.classList.add('active-link');
 
-      // Programmatically navigate to the new page
+      // Save the active link to session storage
+      sessionStorage.setItem('activeLink', this.href);
+
+      // Navigate to the new page
       window.location.href = this.href;
     });
-    // Check the current page and set the active link
-    if (link.href === window.location.href) {
+
+    // Check the session storage and set the active link
+    if (link.href === sessionStorage.getItem('activeLink')) {
       link.classList.add('active-link');
     }
   });

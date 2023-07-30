@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -191,6 +191,10 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -338,6 +342,14 @@ ul,
 menu {
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
   padding: 0;
 }
 
@@ -627,6 +639,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
 .ml-5 {
   margin-left: 1.25rem;
 }
@@ -671,6 +687,10 @@ video {
   height: 0px;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .h-40 {
   height: 10rem;
 }
@@ -701,6 +721,10 @@ video {
 
 .w-0 {
   width: 0px;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .w-20 {
@@ -776,6 +800,10 @@ video {
   gap: 1rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
 .space-x-12 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(3rem * var(--tw-space-x-reverse));
@@ -798,6 +826,12 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -834,6 +868,11 @@ video {
   border-color: transparent;
 }
 
+.bg-\[\#ececec\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 236 236 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#ff3131\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 49 49 / var(--tw-bg-opacity));
@@ -842,6 +881,14 @@ video {
 .bg-\[\#ffffff\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[444444\] {
+  background-color: 444444;
+}
+
+.bg-black\/60 {
+  background-color: rgb(0 0 0 / 0.6);
 }
 
 .bg-black\/80 {
@@ -1032,6 +1079,11 @@ video {
   line-height: 1.25;
 }
 
+.text-\[\#ffde59\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 222 89 / var(--tw-text-opacity));
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1100,49 +1152,24 @@ video {
   --heading-font: "Inconsolata", sans-serif;
   /* 300 */
   --accent-font: "Inconsolata", sans-serif;
-  --background-colour: linear-gradient(
-    to right top,
-    #ffffff,
-    #f1dffa,
-    #f3bbe8,
-    #fc93c4,
-    #ff6790,
-    #ff6172,
-    #ff624f,
-    #ff6b26,
-    #ff8b26,
-    #ffa82f,
-    #ffc441,
-    #ffde59
-  );
-  --background-colour-2: linear-gradient(
-    to left bottom,
-    #ffffff,
-    #f1dffa,
-    #f3bbe8,
-    #fc93c4,
-    #ff6790,
-    #ff6172,
-    #ff624f,
-    #ff6b26,
-    #ff8b26,
-    #ffa82f,
-    #ffc441,
-    #ffde59
-  );
+  --background-colour: linear-gradient(to right top,
+      #ffffff,
+      #f1dffa,
+      #f3bbe8,
+      #fc93c4,
+      #ff6790,
+      #ff6172,
+      #ff624f,
+      #ff6b26,
+      #ff8b26,
+      #ffa82f,
+      #ffc441,
+      #ffde59);
 }
 
 .active-link {
   color: #ff3131;
   border: 2px solid #ff3131;
-}
-
-.bg-test {
-  background-image: var(--background-colour);
-}
-
-.bg-test2 {
-  background-image: var(--background-colour-2);
 }
 
 /* Background image */
@@ -1335,6 +1362,11 @@ video {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+
+  .sm\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1354,6 +1386,10 @@ video {
     margin-bottom: 0px;
   }
 
+  .md\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1371,6 +1407,10 @@ video {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1385,6 +1425,12 @@ video {
 
   .md\:items-start {
     align-items: flex-start;
+  }
+
+  .md\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:px-4 {
@@ -1419,6 +1465,16 @@ video {
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .lg\:py-28 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .lg\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .lg\:text-lg {

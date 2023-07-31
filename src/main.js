@@ -1,6 +1,9 @@
 // Selects all nav links
 const navLinks = document.querySelectorAll(".md\\:flex .text-xl");
 
+// Selects logo
+const logo = document.querySelector('.w-20 a');
+
 // Function to set video speed and check the if current page has a video
 const setVideoSpeed = () => {
   const video = document.getElementById('myVideo');
@@ -27,6 +30,18 @@ const toggleCTA = () => {
       cta.style.display = 'none';
     }
   }
+}
+
+// Function to handle logo click
+const logoClick = () => {
+  // Deselect all links 
+  navLinks.forEach(link => link.classList.remove('active-link'));
+
+  // Forgets about the last active link
+  sessionStorage.removeItem('activeLink');
+
+  // Head to the home page
+  window.location.href = logo.href;
 }
 
 // Updates links on click and when the page loads
@@ -56,6 +71,16 @@ const updateActiveLink = () => {
       link.classList.add('active-link');
     }
   });
+
+  // If there is no current active links in storage
+  if (!sessionStorage.getItem('activeLink')) {
+    const homeLink = document.querySelector('.md\\:flex a[href="/src/index.html"]');
+    // If the home link is found add the active link and store it in the session storage as active
+    if (homeLink) {
+      homeLink.classList.add('active-link');
+      sessionStorage.setItem('activeLink', homeLink.href);
+    }
+  }
 }
 
 // On DOM Content Loaded
@@ -63,5 +88,12 @@ document.addEventListener('DOMContentLoaded', () => {
   setVideoSpeed();
   document.getElementById('mobile-nav').addEventListener('click', toggleMobileMenu);
   document.getElementById('mobile-nav').addEventListener('click', toggleCTA);
+  logo.addEventListener('click', function (e) {
+    // Prevent the default action of the link
+    e.preventDefault();
+
+    // Invoke the logo function
+    logoClick();
+  });
   updateActiveLink();
 });

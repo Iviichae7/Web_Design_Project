@@ -53,9 +53,31 @@
 }
 
 input{
-    border-radius: 4px;
+    
 }
 
 textarea{
     border-radius: 4px;
+}
+
+.label{
+    display: block;
+    margin-left: 20px;
+    
+}
+
+.inputBox{
+    width: 95%;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    border-radius: 4px;
+    padding: 6px;
+
+}
+
+.eventTime{
+    margin-left: 20px;
+    border-radius: 4px;
+    padding: 2px
+    margin-bottom: 2px;
 }

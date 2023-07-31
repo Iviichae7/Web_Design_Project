@@ -53,42 +53,42 @@
         <table>
 
             <tr>
-                <td>Name</td>
-                <td><input type="text" id="name" name="Contact-name" placeholder="Name" size="30px"></td>
+                <td><label class="label">Name</label></td>
+                <td><input type="text" class=inputBox id="name" name="Contact-name" placeholder="Name" size="30px"></td>
             </tr>
 
             <tr>
-                <td>Email</td>
-                <td><input type="email" id="email" name="Contact-email" placeholder="email"></td>
+                <td><label class="label">Email</label></td>
+                <td><input type="email" class=inputBox id="email" name="Contact-email" placeholder="email"></td>
             </tr>
 
             <tr>
-                <td>Mobile Contact Details</td>
+                <td><label class="label">Mobile Contact Details</label></td>
                 <td>
-                    <select id="mobilePrefix" name="Mobile-prefix" required>
+                    <select id="mobilePrefix" class=inputBox name="Mobile-prefix" required>
                         <option value=""disabled selected>Select a prefix</option>
                         <option>085</option>
                         <option>086</option>
                         <option>087</option>
                 </select>
-                <input type="text" id="mobileNumber" placeholder="Mobile number" name="Mobile-number">
+                <input type="text" class=inputBox id="mobileNumber" placeholder="Mobile number" name="Mobile-number">
             </td>
             </tr>
 
             <tr>
-                <td>Event Address</td>
-                <td><input type="text" id="address" name="Event-address" placeholder="Event Address" size="70px"></td>
-                <td>Eircode</td>
-                <td><input type="text" id="eircode" name="Event-eircode" placeholder="Eircode" size="10px"></td>
+                <td><label class="label">Event Address</label></td>
+                <td><input type="text" class=inputBox id="address" name="Event-address" placeholder="Event Address" size="70px"></td>
+                <td><label class="label">Eircode</label></td>
+                <td><input type="text" class=inputBox id="eircode" name="Event-eircode" placeholder="Eircode" size="10px"></td>
             </tr>
 
             <tr>
-                <td>Event Date</td>
-                <td><input type="date" id="date" name="Event-date"></td>
+                <td><label class="label">Event Date</label></td>
+                <td><input type="date" class=inputBox id="date" name="Event-date"></td>
             </tr>
 
             <tr>
-                <td>Event time</td>
+                <td><label class="label">Event Time</label></td>
     
                 <td>
                     <input type="radio" class="eventTime" name="Event-time" value="Morning" required/>
@@ -105,11 +105,11 @@
 
             <tr>
                 <td>
-                    <label>Type of event:</label>
+                    <label><label class="label">Type of Event</label></label>
                 </td>
 
                 <td>
-                    <select id="eventType" Name="Event-type" required>
+                    <select id="eventType" class=inputBox Name="Event-type" required>
                         <option value=""disabled selected>Select and event type</option>
                         <option value="Corporate">Corporate</option>
                         <option value="Wedding">Wedding</option>
@@ -122,24 +122,24 @@
             </tr>
 
             <tr>
-                <td><label>Number of Adults</label></td>
-                <td><input type="number" name="Number of adults" required /></td>
+                <td><label class="label">Number of Adults</label></td>
+                <td><input type="number" class=inputBox name="Number of adults" required /></td>
             </tr>
             <tr>
-                <td><label>Number of Children</label></td>
-                <td><input type="number" name="Number of Children" required/></td>
+                <td><label class="label">Number of Children</label></td>
+                <td><input type="number" class=inputBox name="Number of Children" required/></td>
             </tr>
 
             <tr>
 
-                <td><label>Other relevant details:</label></td>
+                <td><label class="label">Other relevant details</label></td>
                 <td>
-                    <textarea cols="30" rows="10" name="Other relevant information"></textarea>
+                    <textarea cols="30" rows="10" class=inputBox name="Other relevant information"></textarea>
                 </td>
             </tr>
 
                 <tr>
-                    <td><label>Get a quote:</label></td>
+                    <td><label class="label">Get a quote</label></td>
                     <td><input type="submit" value="Click here to request a quote"></td>
         
                 </tr>
@@ -152,6 +152,11 @@
         <div id="returnMessage" style="display: none;">
             Thank you for submitting your event details.  Your request has been successfully processed.  We will be in contact soon.
         </div>
+
+
+     
         
     </body>
+
+
 </html>

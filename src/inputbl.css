@@ -49,3 +49,15 @@
 .carousel-control-next-icon{
     background-color: #FF3131;
 }
+
+#ContactBody{
+    background-image: radial-gradient(circle, #ffde59, #ffbb39, #ff9526, #ff6b26, #ff3131);
+}
+
+input{
+    border-radius: 4px;
+}
+
+textarea{
+    border-radius: 4px;
+}

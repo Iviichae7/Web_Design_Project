@@ -143,14 +143,47 @@
 
 /*Beginning of about.html */
 
-.Story_Text h1 {
+.Story_Text h1,
+.Biz_Text h1,
+.Tully_Text h1 {
   font-family: var(--heading-font);
   font-weight: bold;
+  font-size: 40px;
+  float: left;
+  width: 50%;
+
+}
+.Story_Text .first_par,
+.Biz_Text .first_par,
+.Tully_Text .first_par {
+  font-family: var(--normal-font);
+  float: right;
+  width: 50%;
+
+
 }
 
-.Story_Text p {
-  font-family: var(--normal-font);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+
+.Final_Text h1 {
+  font-family: var(--accent-font);
+  font-style: italic;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 100px
 }
+
+.Story_img img,
+.Biz_img img,
+.Tully_img img {
+  width: 70%;
+  height: 600px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+
+

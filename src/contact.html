@@ -1,188 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA=Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device=width, initial=scale=1.0">
-        <title>Crumb Pizza</title>
-        <script src="https://kit.fontawesome.com/64688bc44b.js" crossorigin="anonymous"></script>
-        <link href="/dist/output.css" rel="stylesheet" />
-        
-        <script defer src="contactScript.js"></script>
 
-        <link rel="stylesheet" href="inputbl.css">
-    </head>
-    <body id="ContactBody">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA=Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device=width, initial=scale=1.0">
+  <title>Crumb Pizza</title>
+  <script src="https://kit.fontawesome.com/64688bc44b.js" crossorigin="anonymous"></script>
+  <link href="/dist/output.css" rel="stylesheet" />
 
-        <!-------------------------------------------------- Navbar -------------------------------------------------->
-    <div class="absolute left-0 right-0 flex flex-col justify-between h-full">
-        <nav class="w-full z-10 bg-black/80 shadow-md">
-          <div class="container mx-auto px-6 md:px-4 lg:px-8 py-6">
-            <div class="flex items-center justify-between">
-              <!-- Logo -->
-              <div class="w-20">
-                <img class="rounded-full cursor-pointer" src="/images/logo.png" alt="logo" href="/src/index.html" />
-              </div>
-              <!-- Menu -->
-              <div class="hidden md:flex items-center space-x-8 md:space-x-4">
-                <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg active-link"
-                  href="/src/index.html">Home</a>
-                <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
-                  href="/src/index.html#services">Services</a>
-                <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
-                  href="/src/menu.html">Menu</a>
-                <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
-                  href="/src/about.html">About Us</a>
-                <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
-                  href="/src/gallery.html">Gallery</a>
-                <!-- Button -->
-                <button class="bg-[#ff3131] text-white px-4 py-2 rounded-xl cursor-pointer md:py-2">Contact Us</button>
-              </div>
-              <!-- Mobile Button -->
-              <div class="md:hidden">
-                <button id="mobile-nav" class="text-white text-6xl">
-                  ☰
-                </button>
-              </div>
-            </div>
+  <script defer src="contactScript.js"></script>
+
+  <link rel="stylesheet" href="inputbl.css">
+</head>
+
+<body id="ContactBody">
+
+  <!-------------------------------------------------- Navbar -------------------------------------------------->
+  <div class="absolute left-0 right-0 flex flex-col justify-between h-full">
+    <nav class="w-full z-10 bg-black/80 shadow-md">
+      <div class="container mx-auto px-6 md:px-4 lg:px-8 py-6">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="w-20">
+            <a href="/src/index.html"><img class="rounded-full cursor-pointer" src="/images/logo.png" alt="logo"
+                href="/src/index.html" /></a>
           </div>
-        </nav>
-        <!-------------------------------------------------- End of Navbar -------------------------------------------------->
-
-        <form id="contactForm" action="mailto:crumbpizza@gmail.com" method="post" enctype="text/plain" onsubmit="return validateInput()">
-      
-        <table>
-
-            <tr>
-                <td><label class="label">Name</label></td>
-                <td><input type="text" class=inputBox id="name" name="Contact-name" placeholder="Name" size="30px"></td>
-            </tr>
-
-            <tr>
-                <td><label class="label">Email</label></td>
-                <td><input type="email" class=inputBox id="email" name="Contact-email" placeholder="email"></td>
-            </tr>
-
-            <tr>
-                <td><label class="label">Mobile Contact Details</label></td>
-                <td>
-                    <select id="mobilePrefix" class=inputBox name="Mobile-prefix" required>
-                        <option value=""disabled selected>Select a prefix</option>
-                        <option>085</option>
-                        <option>086</option>
-                        <option>087</option>
-                </select>
-                <input type="text" class=inputBox id="mobileNumber" placeholder="Mobile number" name="Mobile-number">
-            </td>
-            </tr>
-
-            <tr>
-                <td><label class="label">Event Address</label></td>
-                <td><input type="text" class=inputBox id="address" name="Event-address" placeholder="Event Address" size="70px"></td>
-                <td><label class="label">Eircode</label></td>
-                <td><input type="text" class=inputBox id="eircode" name="Event-eircode" placeholder="Eircode" size="10px"></td>
-            </tr>
-
-            <tr>
-                <td><label class="label">Event Date</label></td>
-                <td><input type="date" class=inputBox id="date" name="Event-date"></td>
-            </tr>
-
-            <tr>
-                <td><label class="label">Event Time</label></td>
-    
-                <td>
-                    <input type="radio" class="eventTime" name="Event-time" value="Morning" required/>
-                    <label>Morning</label><br>
-                    <input type="radio" class="eventTime" name="Event-time" value="Afternoon" required/>
-                    <label>Afternoon</label><br>
-                    <input type="radio" class="eventTime" name="Event-time" value="Evening" required/>
-                    <label>Evening</label><br>
-                    <input type="radio" class="eventTime" name="Event-time" value="Night" required/>
-                    <label>Night (from 8pm)</label>
-                </td>
-
-            </tr>
-
-            <tr>
-                <td>
-                    <label><label class="label">Type of Event</label></label>
-                </td>
-
-                <td>
-                    <select id="eventType" class=inputBox Name="Event-type" required>
-                        <option value=""disabled selected>Select and event type</option>
-                        <option value="Corporate">Corporate</option>
-                        <option value="Wedding">Wedding</option>
-                        <option value="Birthday">Birthday</option>
-                        <option value="Other">Other</option>
-                    </select>                      
-                        
-                </td>
-
-            </tr>
-
-            <tr>
-                <td><label class="label">Number of Adults</label></td>
-                <td><input type="number" class=inputBox name="Number of adults" required /></td>
-            </tr>
-            <tr>
-                <td><label class="label">Number of Children</label></td>
-                <td><input type="number" class=inputBox name="Number of Children" required/></td>
-            </tr>
-
-            <tr>
-
-                <td><label class="label">Other relevant details</label></td>
-                <td>
-                    <textarea cols="30" rows="10" class=inputBox name="Other relevant information"></textarea>
-                </td>
-            </tr>
-
-                <tr>
-                    <td><label class="label">Get a quote</label></td>
-                    <td><input type="submit" value="Click here to request a quote"></td>
-        
-                </tr>
-
-
-        </table>
-
-        </form>
-
-        <div id="returnMessage" style="display: none;">
-            Thank you for submitting your event details.  Your request has been successfully processed.  We will be in contact soon.
+          <!-- Menu -->
+          <div class="hidden md:flex items-center space-x-8 md:space-x-4">
+            <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg active-link"
+              href="/src/index.html">Home</a>
+            <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
+              href="/src/index.html#services">Services</a>
+            <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
+              href="/src/menu.html">Menu</a>
+            <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
+              href="/src/about.html">About Us</a>
+            <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
+              href="/src/gallery.html">Gallery</a>
+            <!-- Button -->
+            <button class="bg-[#ff3131] text-white px-4 py-2 rounded-xl cursor-pointer md:py-2"><a
+                href="/src/contact.html">Contact Us</a></button>
+          </div>
+          <!-- Mobile Button -->
+          <div class="md:hidden">
+            <button id="mobile-nav" class="text-white text-6xl">
+              ☰
+            </button>
+          </div>
         </div>
+      </div>
+    </nav>
+    <!-------------------------------------------------- End of Navbar -------------------------------------------------->
+
+    <form id="contactForm" action="mailto:crumbpizza@gmail.com" method="post" enctype="text/plain"
+      onsubmit="return validateInput()">
+
+      <table>
+
+        <tr>
+          <td><label class="label">Name</label></td>
+          <td><input type="text" class=inputBox id="name" name="Contact-name" placeholder="Name" size="30px"></td>
+        </tr>
+
+        <tr>
+          <td><label class="label">Email</label></td>
+          <td><input type="email" class=inputBox id="email" name="Contact-email" placeholder="email"></td>
+        </tr>
+
+        <tr>
+          <td><label class="label">Mobile Contact Details</label></td>
+          <td>
+            <select id="mobilePrefix" class=inputBox name="Mobile-prefix" required>
+              <option value="" disabled selected>Select a prefix</option>
+              <option>085</option>
+              <option>086</option>
+              <option>087</option>
+            </select>
+            <input type="text" class=inputBox id="mobileNumber" placeholder="Mobile number" name="Mobile-number">
+          </td>
+        </tr>
+
+        <tr>
+          <td><label class="label">Event Address</label></td>
+          <td><input type="text" class=inputBox id="address" name="Event-address" placeholder="Event Address"
+              size="70px"></td>
+          <td><label class="label">Eircode</label></td>
+          <td><input type="text" class=inputBox id="eircode" name="Event-eircode" placeholder="Eircode" size="10px">
+          </td>
+        </tr>
+
+        <tr>
+          <td><label class="label">Event Date</label></td>
+          <td><input type="date" class=inputBox id="date" name="Event-date"></td>
+        </tr>
+
+        <tr>
+          <td><label class="label">Event Time</label></td>
+
+          <td>
+            <input type="radio" class="eventTime" name="Event-time" value="Morning" required />
+            <label>Morning</label><br>
+            <input type="radio" class="eventTime" name="Event-time" value="Afternoon" required />
+            <label>Afternoon</label><br>
+            <input type="radio" class="eventTime" name="Event-time" value="Evening" required />
+            <label>Evening</label><br>
+            <input type="radio" class="eventTime" name="Event-time" value="Night" required />
+            <label>Night (from 8pm)</label>
+          </td>
+
+        </tr>
+
+        <tr>
+          <td>
+            <label><label class="label">Type of Event</label></label>
+          </td>
+
+          <td>
+            <select id="eventType" class=inputBox Name="Event-type" required>
+              <option value="" disabled selected>Select and event type</option>
+              <option value="Corporate">Corporate</option>
+              <option value="Wedding">Wedding</option>
+              <option value="Birthday">Birthday</option>
+              <option value="Other">Other</option>
+            </select>
+
+          </td>
+
+        </tr>
+
+        <tr>
+          <td><label class="label">Number of Adults</label></td>
+          <td><input type="number" class=inputBox name="Number of adults" required /></td>
+        </tr>
+        <tr>
+          <td><label class="label">Number of Children</label></td>
+          <td><input type="number" class=inputBox name="Number of Children" required /></td>
+        </tr>
+
+        <tr>
+
+          <td><label class="label">Other relevant details</label></td>
+          <td>
+            <textarea cols="30" rows="10" class=inputBox name="Other relevant information"></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label class="label">Get a quote</label></td>
+          <td><input type="submit" value="Click here to request a quote"></td>
+
+        </tr>
+
+
+      </table>
+
+    </form>
+
+    <div id="returnMessage" style="display: none;">
+      Thank you for submitting your event details. Your request has been successfully processed. We will be in contact
+      soon.
+    </div>
 
     <!-------------------------------------------------- Footer -------------------------------------------------->
-  <footer class="bg-black/60 text-center text-white dark:bg-neutral-600 flex justify-center ">
-    <div class="container pt-10">
-      <div class="mb-10 flex justify-center ml-10">
-        <a href="" class="mr-10 text-neutral-800 dark:text-neutral-200">
-          <i class="fa-brands fa-facebook-f" style="color: #f7f7f8;"></i>
-        </a>
-        <a href="" class="mr-10 text-neutral-800 dark:text-neutral-200">
-          <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
-        </a>
-        <a href="" class="mr-10 text-neutral-800 dark:text-neutral-200">
-          <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-        </a>
+    <footer class="bg-black/60 text-center text-white dark:bg-neutral-600 flex justify-center ">
+      <div class="container pt-10">
+        <div class="mb-10 flex justify-center ml-10">
+          <a href="" class="mr-10 text-neutral-800 dark:text-neutral-200">
+            <i class="fa-brands fa-facebook-f" style="color: #f7f7f8;"></i>
+          </a>
+          <a href="" class="mr-10 text-neutral-800 dark:text-neutral-200">
+            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+          </a>
+          <a href="" class="mr-10 text-neutral-800 dark:text-neutral-200">
+            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+          </a>
+        </div>
       </div>
+    </footer>
+    <!-------------------------------------------------- End of Footer -------------------------------------------------->
+
+    <!-------------------------------------------------- Copyright -------------------------------------------------->
+    <div class="bg-black/80 p-4 text-center text-white dark:bg-neutral-700 dark:text-neutral-200">
+      © 2023 Copyright:
+      <a class="text-white dark:text-neutral-400">Crumb Pizza</a>
     </div>
-  </footer>
-  <!-------------------------------------------------- End of Footer -------------------------------------------------->
-
-  <!-------------------------------------------------- Copyright -------------------------------------------------->
-  <div class="bg-black/80 p-4 text-center text-white dark:bg-neutral-700 dark:text-neutral-200">
-    © 2023 Copyright:
-    <a class="text-white dark:text-neutral-400">Crumb Pizza</a>
-  </div>
-  <!-------------------------------------------------- End of Copyright -------------------------------------------------->
+    <!-------------------------------------------------- End of Copyright -------------------------------------------------->
 
 
-     
-        
-    </body>
+
+
+</body>
 
 
 </html>

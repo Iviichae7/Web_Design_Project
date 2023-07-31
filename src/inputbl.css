@@ -15,8 +15,6 @@
   }
 
 
-
-
 #GalleryBody{
 
     background-color: #FFDE59;
@@ -51,7 +49,7 @@
 }
 
 #ContactBody{
-    background-image: radial-gradient(circle, #ffde59, #ffbb39, #ff9526, #ff6b26, #ff3131);
+    background-color: #FFDE59;
 }
 
 input{

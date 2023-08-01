@@ -16,11 +16,10 @@
 
 
 
-//Contact form style
+--Contact form style--
 
-//
-textarea{
-    border-radius: 4px;
+#contactForm{
+    margin-top: 80px;
 }
 
 .label{
@@ -43,17 +42,14 @@ textarea{
 .eventTime{
     margin-left: 20px;
     border-radius: 4px;
-    padding: 2px
-    margin-bottom; 2px;
+    padding: 2px;
+    margin-bottom: 2px;
 }
 
 #mobilePrefix{
     width: fit-content;
 }
 
-#ContactContainer{
-    background-color: white
-}
 
 #ContactCard{
     text-align: center; 
@@ -75,10 +71,11 @@ textarea{
 
 }
 
-.carousel-inner img{
-    width: 60%;
-
+textarea{
+    border-radius: 4px;
 }
+
+
 
 .gallery-container {
     display: flex;

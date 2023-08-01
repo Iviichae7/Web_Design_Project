@@ -394,6 +394,32 @@
 
   <!-------------------------------------------------- End of Reviews -------------------------------------------------->
 
+  <!-------------------------------------------------- Thinking of a Discount? -------------------------------------------------->
+  <div class="bg-[#ececec] py-10 px-4">
+    <!-- Title -->
+    <h2 class="font-semibold text-4xl text-gray-800 leading-tight text-center py-10">
+      Thinking of a Discount?
+    </h2>
+
+    <div class="flex justify-center items-center flex-col">
+      <p class="mb-4 text-xl" id="statusMessage">Guess a number between 1 and 10.</p>
+      <p class="mb-4 text-xl">You have 3 tries!</p>
+
+      <!-- Input for the guessed number -->
+      <input type="number" id="userGuess" min="1" max="10" class="text-center w-20 p-2 rounded-md mb-4">
+
+      <button class="bg-[#ff3131] px-8 py-2 rounded-lg text-white text-xl my-4 cursor-pointer"
+        id="guessButton">Guess</button>
+
+      <div class="mt-4" id="discountMessage" style="display:none">
+        <h2 class="font-semibold text-2xl text-gray-800 leading-tight text-center py-10">Congratulations!</h2>
+        <p class="text-lg flex justify-center">Here is your discount code: </p>
+        <h3 class="text-2xl" id="discountCode"></h3>
+      </div>
+    </div>
+  </div>
+  <!-------------------------------------------------- End of Thinking of a Discount? -------------------------------------------------->
+
   <!-------------------------------------------------- Footer -------------------------------------------------->
   <footer class="bg-black/60 text-center text-white dark:bg-neutral-600 flex justify-center ">
     <div class="container pt-10">

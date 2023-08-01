@@ -98,6 +98,52 @@ document.addEventListener('DOMContentLoaded', () => {
   updateActiveLink();
 });
 
+// Guessing game
+const secretNumber = Math.floor(Math.random() * 10) + 1;
+let tries = 0;
+
+const guessButton = document.getElementById('guessButton');
+const userGuess = document.getElementById('userGuess');
+const statusMessage = document.getElementById('statusMessage');
+const discountCode = document.getElementById('discountCode');
+const discountMessage = document.getElementById('discountMessage');
+
+// Start the game when the guess button is clicked
+guessButton.addEventListener('click', () => {
+  tries += 1;
+  let guessedNumber = parseInt(userGuess.value);
+
+  // Validation if its not a number or less than 1 or greater than 10
+  if (isNaN(guessedNumber) || guessedNumber < 1 || guessedNumber > 10) {
+    statusMessage.innerText = 'Please enter a valid number between 1 and 10!';
+    return;
+  }
+
+  // If the user guess the secret number
+  if (guessedNumber === secretNumber) {
+    // Rrandom discount between 5 and 25 percent
+    let discounts = [5, 10, 15, 25];
+    // Select a random index in the array
+    let index = Math.floor(Math.random() * discounts.length);
+    let discount = discounts[index];
+    // Generating a unique code 100000 inclusive and 900000 exclusive
+    let uniqueCode = Math.floor(100000 + Math.random() * 900000);
+    let discountMessageText = 'Redeem this code ' + uniqueCode + ' over the phone for ' + discount + '% off!';
+    discountCode.innerText = discountMessageText;
+    discountMessage.style.display = 'block';
+    statusMessage.innerText = 'You got it right!';
+    guessButton.disabled = true;
+  } else if (tries >= 3) {
+    statusMessage.innerText = 'Sorry, you did not guess the right number. Thanks for playing!';
+    guessButton.disabled = true;
+  } else {
+    if (guessedNumber > secretNumber) {
+      statusMessage.innerText = 'Your guess was too high! Try again.';
+    } else {
+      statusMessage.innerText = 'Your guess was too low! Try again.';
+    }
+  }
+});
 
 //Script to display image text in Gallery
 
@@ -106,4 +152,4 @@ function showText(text) {
   var choiceText = document.getElementById("choiceText");
 
   choiceText.textContent = text;
-  }
+}

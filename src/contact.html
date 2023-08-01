@@ -7,10 +7,13 @@
         <title>Crumb Pizza</title>
         <script src="https://kit.fontawesome.com/64688bc44b.js" crossorigin="anonymous"></script>
         <link href="/dist/output.css" rel="stylesheet" />
-        
+        <script defer src="/src/main.js"></script>
         <script defer src="contactScript.js"></script>
-
+        <link rel="stylesheet" href="input.css">
         <link rel="stylesheet" href="inputbl.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     </head>
     <body id="ContactBody">
 
@@ -49,6 +52,14 @@
         </nav>
         <!-------------------------------------------------- End of Navbar -------------------------------------------------->
 
+        <div id="ContactContainer">
+
+            <div id="ContactCard">
+
+                <h5 id="ContactH5">Crumb on the move</h5>
+                <h3 id="ContactH3">Get a quote for our mobile Pizza service</h3>
+            </div>
+
         <form id="contactForm" action="mailto:crumbpizza@gmail.com" method="post" enctype="text/plain" onsubmit="return validateInput()">
       
         <table>
@@ -64,16 +75,21 @@
             </tr>
 
             <tr>
-                <td><label class="label">Mobile Contact Details</label></td>
+                <td><label class="label">Mobile Prefix</label></td>
                 <td>
                     <select id="mobilePrefix" class=inputBox name="Mobile-prefix" required>
                         <option value=""disabled selected>Select a prefix</option>
                         <option>085</option>
                         <option>086</option>
                         <option>087</option>
-                </select>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label class="label">Mobile Number</label></td>
+                <td>
                 <input type="text" class=inputBox id="mobileNumber" placeholder="Mobile number" name="Mobile-number">
-            </td>
+                </td>
             </tr>
 
             <tr>
@@ -153,6 +169,8 @@
         <div id="returnMessage" style="display: none;">
             Thank you for submitting your event details.  Your request has been successfully processed.  We will be in contact soon.
         </div>
+
+    </div>
 
     <!-------------------------------------------------- Footer -------------------------------------------------->
   <footer class="bg-black/60 text-center text-white dark:bg-neutral-600 flex justify-center ">

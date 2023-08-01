@@ -14,42 +14,11 @@
   
   }
 
-#GalleryContiner{
-    
-        background-color: white;
-    }
 
 
-#GalleryCard{
-    margin-top: 40px;
-    text-align: center;  
-}
+//Contact form style
 
-.carousel-item{
-    padding: 5%;
-    max-width: 500px;
-    margin-left: 28%;
-}
-
-#GalleryH3{
-    font-family: 'Lato', sans-serif;
-
-}
-#GalleryH5{
-    font-family: 'League Spartan', sans-serif;
-
-}
-
-.carousel-control-prev-icon{
-    background-color:  #FF3131;
-}
-
-.carousel-control-next-icon{
-    background-color: #FF3131;
-}
-
-
-
+//
 textarea{
     border-radius: 4px;
 }
@@ -75,7 +44,7 @@ textarea{
     margin-left: 20px;
     border-radius: 4px;
     padding: 2px
-    margin-bottom: 2px;
+    margin-bottom; 2px;
 }
 
 #mobilePrefix{
@@ -140,6 +109,17 @@ textarea{
   color: black;
   text-align: center;
   padding: 10px;
+}
+
+#GalleryContiner{
+    
+    background-color: white;
+}
+
+
+#GalleryCard{
+margin-top: 40px;
+text-align: center;  
 }
 
 

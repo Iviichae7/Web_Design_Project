@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA=Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device=width, initial=scale=1.0">
-        <title>Crumb Pizza</title>
-        <script src="https://kit.fontawesome.com/64688bc44b.js" crossorigin="anonymous"></script>
-        <link href="/dist/output.css" rel="stylesheet" />
-        
-        <script defer src="contactScript.js"></script>
 
-        <link rel="stylesheet" href="inputbl.css">
-    </head>
-    <body id="ContactBody">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA=Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device=width, initial=scale=1.0">
+  <title>Crumb Pizza</title>
+  <script src="https://kit.fontawesome.com/64688bc44b.js" crossorigin="anonymous"></script>
+  <link href="/dist/output.css" rel="stylesheet" />
+
+  <script defer src="contactScript.js"></script>
+
+  <link rel="stylesheet" href="inputbl.css">
+</head>
+
+<body id="ContactBody">
 
   <!-------------------------------------------------- Navbar -------------------------------------------------->
-  <div class="absolute left-0 right-0 flex flex-col justify-between h-full">
+  <div class="left-0 right-0 flex flex-col justify-between h-full">
     <nav class="w-full z-10 bg-black/80 shadow-md">
       <div class="container mx-auto px-6 md:px-4 lg:px-8 py-6">
         <div class="flex items-center justify-between">
@@ -52,9 +54,10 @@
     <!-------------------------------------------------- End of Navbar -------------------------------------------------->
 
 
-        <form id="contactForm" action="mailto:crumbpizza@gmail.com" method="post" enctype="text/plain" onsubmit="return validateInput()">
-      
-        <table>
+    <form id="contactForm" action="mailto:crumbpizza@gmail.com" method="post" enctype="text/plain"
+      onsubmit="return validateInput()">
+
+      <table>
 
         <tr>
           <td><label class="label">Name</label></td>
@@ -66,18 +69,18 @@
           <td><input type="email" class=inputBox id="email" name="Contact-email" placeholder="email"></td>
         </tr>
 
-            <tr>
-                <td><label class="label">Mobile Contact Details</label></td>
-                <td>
-                    <select id="mobilePrefix" class=inputBox name="Mobile-prefix" required>
-                        <option value=""disabled selected>Select a prefix</option>
-                        <option>085</option>
-                        <option>086</option>
-                        <option>087</option>
-                </select>
-                <input type="text" class=inputBox id="mobileNumber" placeholder="Mobile number" name="Mobile-number">
-            </td>
-            </tr>
+        <tr>
+          <td><label class="label">Mobile Contact Details</label></td>
+          <td>
+            <select id="mobilePrefix" class=inputBox name="Mobile-prefix" required>
+              <option value="" disabled selected>Select a prefix</option>
+              <option>085</option>
+              <option>086</option>
+              <option>087</option>
+            </select>
+            <input type="text" class=inputBox id="mobileNumber" placeholder="Mobile number" name="Mobile-number">
+          </td>
+        </tr>
 
         <tr>
           <td><label class="label">Event Address</label></td>
@@ -160,31 +163,33 @@
       soon.
     </div>
 
-    </div>
+  </div>
 
-        <!--Beginning of Footer-->
-        <footer class="bg-neutral-200 text-center text-white dark:bg-neutral-600 flex justify-center ">
-          <div class="container pt-10">
-            <div class="mb-10 flex justify-center">
-              <a href="" class="mr-10 text-neutral-800 dark:text-neutral-200">
-                <i class="fa-brands fa-facebook-f" style="color: #f7f7f8;"></i>
-              </a>
-              <a href="" class="mr-10 text-neutral-800 dark:text-neutral-200">
-                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
-              </a>
-              <a href="" class="mr-10 text-neutral-800 dark:text-neutral-200">
-                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-              </a>
-            </div>
-          </div>
-        </footer>
-        <!-------------------------------------------------- End of Footer -------------------------------------------------->
-    
-        <!-------------------------------------------------- Copyright -------------------------------------------------->
-        <div class="bg-neutral-300 p-4 text-center text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200">
-          © 2023 Copyright:
-          <a class="text-neutral-800 dark:text-neutral-400">Crumb Pizza</a>
-        </div>
+  <!-------------------------------------------------- Footer -------------------------------------------------->
+  <footer class="bg-black/60 text-center text-white dark:bg-neutral-600 flex justify-center ">
+    <div class="container pt-10">
+      <div class="mb-10 flex justify-center ml-10">
+        <a href="" class="mr-10 text-neutral-800 dark:text-neutral-200">
+          <i class="fa-brands fa-facebook-f" style="color: #f7f7f8;"></i>
+        </a>
+        <a href="" class="mr-10 text-neutral-800 dark:text-neutral-200">
+          <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+        </a>
+        <a href="" class="mr-10 text-neutral-800 dark:text-neutral-200">
+          <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!-------------------------------------------------- End of Footer -------------------------------------------------->
+
+  <!-------------------------------------------------- Copyright -------------------------------------------------->
+  <div class="bg-black/80 p-4 text-center text-white dark:bg-neutral-700 dark:text-neutral-200">
+    © 2023 Copyright:
+    <a class="text-white dark:text-neutral-400">Crumb Pizza</a>
+  </div>
+  <!-------------------------------------------------- End of Copyright -------------------------------------------------->
+
 </body>
 
 </html>

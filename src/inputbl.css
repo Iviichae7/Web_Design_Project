@@ -1,34 +1,41 @@
 :root {
 
     /* 400 */
-  
+
     --normal-font: "Inconsolata", sans-serif;
-  
+
     /* 700 */
-  
+
     --heading-font: "Inconsolata", sans-serif;
-  
+
     /* 300 */
-  
+
     --accent-font: "Inconsolata", sans-serif;
-  
-  }
+
+}
 
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
---Contact form style--
+footer {
+    width: 100%
+}
 
-#contactForm{
+#contactForm {
     margin-top: 80px;
 }
 
-.label{
+.label {
     display: block;
     margin-left: 20px;
-    
+
 }
 
-.inputBox{
+.inputBox {
     width: 95%;
     margin-bottom: 15px;
     margin-left: 20px;
@@ -39,39 +46,39 @@
 
 }
 
-.eventTime{
+.eventTime {
     margin-left: 20px;
     border-radius: 4px;
     padding: 2px;
     margin-bottom: 2px;
 }
 
-#mobilePrefix{
+#mobilePrefix {
     width: fit-content;
 }
 
 
-#ContactCard{
-    text-align: center; 
+#ContactCard {
+    text-align: center;
     padding: 20px;
 
 }
 
-#ContactH5{
+#ContactH5 {
     font-family: var(--heading-font);
     font-size: xx-large;
     color: #FF3131;
 
 }
 
-#ContactH3{
+#ContactH3 {
     font-family: var(--accent-font);
     font-size: x-large;
     color: #FF3131;
 
 }
 
-textarea{
+textarea {
     border-radius: 4px;
 }
 
@@ -82,42 +89,43 @@ textarea{
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
-  }
-  
-  .gallery-item {
-    margin: 10px;
-    width: 250px;
-    border: solid; color: grey; padding: 4px;
-    border-radius: 10px;
-    
-
-  }
-  
-  .gallery-item img {
-    width: 100%; /* Make the images fill the width of the gallery item */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px;
-  }
-
-  
-#choiceText {
-  font-family: "Arial", sans-serif;
-  font-size: 24px;
-  color: black;
-  text-align: center;
-  padding: 10px;
 }
 
-#GalleryContiner{
-    
+.gallery-item {
+    margin: 10px;
+    width: 250px;
+    border: solid;
+    color: grey;
+    padding: 4px;
+    border-radius: 10px;
+
+
+}
+
+.gallery-item img {
+    width: 100%;
+    /* Make the images fill the width of the gallery item */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+
+#choiceText {
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+#GalleryContiner {
+
     background-color: white;
 }
 
 
-#GalleryCard{
-margin-top: 40px;
-text-align: center;  
+#GalleryCard {
+    margin-top: 40px;
+    text-align: center;
 }
-
-
-

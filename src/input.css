@@ -143,6 +143,10 @@
 
 /*Beginning of about.html */
 
+.background_colour {
+  background-color: var(--background-colour);
+}
+
 .Story_Text h1,
 .Biz_Text h1,
 .Tully_Text h1 {
@@ -151,7 +155,6 @@
   font-size: 40px;
   float: left;
   width: 50%;
-
 }
 .Story_Text .first_par,
 .Biz_Text .first_par,
@@ -159,10 +162,32 @@
   font-family: var(--normal-font);
   float: right;
   width: 50%;
-
-
+  margin-right: 100px;
+  font-size: 20px;
+  font-style: italic;
 }
 
+.Story_Text .first_par {
+  padding-top: 200px;
+}
+
+.Story_Text h1 {
+  margin-left: 70px;
+  position: relative;
+  top: 270px;
+}
+
+.Biz_Text h1 {
+  margin-left: 70px;
+  position: relative;
+  top: 70px;
+}
+
+.Tully_Text h1 {
+  margin-left: 70px;
+  position: relative;
+  top: 70px;
+}
 
 .Final_Text h1 {
   font-family: var(--accent-font);
@@ -170,19 +195,20 @@
   font-weight: bolder;
   text-align: center;
   font-size: 30px;
-  margin-bottom: 100px
+  margin-bottom: 200px
 }
 
 .Story_img img,
 .Biz_img img,
 .Tully_img img {
   width: 70%;
-  height: 600px;
+  height: 800px;
   display: block;
   margin: 0 auto;
   object-fit: cover;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  border-radius: 20px;
 }
 
 

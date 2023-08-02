@@ -25,6 +25,18 @@ footer {
     width: 100%
 }
 
+#ContactCard{
+    margin-top: 40px;
+    text-align: center;
+}
+
+#contactH3 {
+    font-family: var(--heading-font);
+    font-size: x-large;
+    color: #FF3131;
+
+}
+
 #contactForm {
     margin-top: 80px;
 }
@@ -78,6 +90,14 @@ footer {
 
 }
 
+#returnMessage{
+    text-align: center;
+    font-family: var(--accent-font);
+    font-size: x-large;
+    color: #FF3131;
+
+}
+
 textarea {
     border-radius: 4px;
 }
@@ -93,7 +113,8 @@ textarea {
 
 .gallery-item {
     margin: 10px;
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     border: solid;
     color: grey;
     padding: 4px;
@@ -104,17 +125,16 @@ textarea {
 
 .gallery-item img {
     width: 100%;
-    /* Make the images fill the width of the gallery item */
     height: auto;
-    /* Maintain aspect ratio */
     border-radius: 10px;
 }
 
 
 #choiceText {
-    font-family: "Arial", sans-serif;
+    font-family: var(--normal-font);
+    font-style: italic;
     font-size: 24px;
-    color: black;
+    color: #FF3131;
     text-align: center;
     padding: 10px;
 }
@@ -129,3 +149,27 @@ textarea {
     margin-top: 40px;
     text-align: center;
 }
+
+#GalleryH3 {
+    font-family: var(--heading-font);
+    font-size: xx-large;
+    color: #FF3131;
+
+}
+
+#GalleryH5 {
+    font-family: var(--accent-font);
+    font-size: x-large;
+}
+
+.imageText{
+    text-align: center;
+    font-size: small;
+}
+
+@media(min-width; 768px){
+    .gallery-item{
+        max-width: 350px;
+    }
+}
+

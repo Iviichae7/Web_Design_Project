@@ -97,6 +97,12 @@
   </div>
   <!-------------------------------------------------- End of Mobile Menu -------------------------------------------------->
 
+  <div id="ContactCard">
+
+    <h3 id="contactH3">Request a Quote for Our Mobile Pizza Catering Service!</h3>
+
+  </div>
+
 
   <form id="contactForm" action="mailto:crumbpizza@gmail.com" method="post" enctype="text/plain"
     onsubmit="return validateInput()">
@@ -114,7 +120,7 @@
       </tr>
 
       <tr>
-        <td><label class="label">Mobile Contact Details</label></td>
+        <td><label class="label">Mobile Prefix</label></td>
         <td>
           <select id="mobilePrefix" class=inputBox name="Mobile-prefix" required>
             <option value="" disabled selected>Select a prefix</option>
@@ -122,14 +128,23 @@
             <option>086</option>
             <option>087</option>
           </select>
-          <input type="text" class=inputBox id="mobileNumber" placeholder="Mobile number" name="Mobile-number">
+          
         </td>
+      </tr>
+
+      <tr>
+        <td><label class="label">Mobile Number</label></td>
+        <td>
+        <input type="text" class=inputBox id="mobileNumber" placeholder="Mobile number" name="Mobile-number">
+      </td>
       </tr>
 
       <tr>
         <td><label class="label">Event Address</label></td>
         <td><input type="text" class=inputBox id="address" name="Event-address" placeholder="Event Address" size="70px">
         </td>
+      </tr>
+      <tr>
         <td><label class="label">Eircode</label></td>
         <td><input type="text" class=inputBox id="eircode" name="Event-eircode" placeholder="Eircode" size="10px">
         </td>

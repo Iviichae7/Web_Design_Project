@@ -146,7 +146,7 @@
       </tr>
       <tr>
         <td><label class="label">Eircode</label></td>
-        <td><input type="text" class=inputBox id="eircode" name="Event-eircode" placeholder="Eircode" size="10px">
+        <td><input type="text" class=inputBox id="eircode" name="Event-eircode" placeholder="7-digit Eircode" size="10px">
         </td>
       </tr>
 
@@ -178,7 +178,7 @@
 
         <td>
           <select id="eventType" class=inputBox Name="Event-type" required>
-            <option value="" disabled selected>Select and event type</option>
+            <option value="" disabled selected>Select an event type</option>
             <option value="Corporate">Corporate</option>
             <option value="Wedding">Wedding</option>
             <option value="Birthday">Birthday</option>
@@ -208,7 +208,7 @@
 
       <tr>
         <td><label class="label">Get a quote</label></td>
-        <td><input type="submit" value="Click here to request a quote"></td>
+        <td><input type="submit" class=inputBox value="Click here to request a quote"></td>
 
       </tr>
 
@@ -218,8 +218,9 @@
   </form>
 
   <div id="returnMessage" style="display: none;">
-    Thank you for submitting your event details. Your request has been successfully processed. We will be in contact
-    soon.
+    Thank you for submitting your event details. <br>
+    Your details will have populated in an email ready to send to Crumb Pizza. <br>
+    Please click send and we will be in contact soon.
   </div>
 
   <!-------------------------------------------------- Footer -------------------------------------------------->

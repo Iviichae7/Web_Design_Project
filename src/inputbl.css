@@ -90,6 +90,14 @@ footer {
 
 }
 
+#returnMessage{
+    text-align: center;
+    font-family: var(--accent-font);
+    font-size: x-large;
+    color: #FF3131;
+
+}
+
 textarea {
     border-radius: 4px;
 }

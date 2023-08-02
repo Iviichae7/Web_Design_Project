@@ -9,8 +9,6 @@
   <link rel="stylesheet" href="input.css">
   <!--nav bar style link-->
   <link href="/dist/output.css" rel="stylesheet" />
-  <!--Link to menu.js-->
-  <script defer src="menu.js"></script>
   <!--Link to main.js-->
   <script defer src="main.js"></script>
   <!--link to google fonts-->
@@ -27,61 +25,83 @@
 </head>
 
 <body>
-  <!-- Navbar -->
-  <div class="absolute left-0 right-0 flex flex-col justify-between h-full">
-    <nav class="w-full z-10 bg-black/80 shadow-md">
-      <div class="container mx-auto px-6 md:px-4 lg:px-8 py-6">
-        <div class="flex items-center justify-between">
-          <!-- Logo -->
-          <div class="w-20">
-            <a href="/src/index.html"><img class="rounded-full cursor-pointer" src="/images/logo.png" alt="logo"
-                href="/src/index.html" /></a>
-          </div>
-          <!-- Menu -->
-          <div class="hidden md:flex items-center space-x-8 md:space-x-6">
-            <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg active-link"
-              href="/src/index.html">Home</a>
-            <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
-              href="/src/index.html#services">Services</a>
-            <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
-              href="/src/menu.html">Menu</a>
-            <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
-              href="/src/about.html">About Us</a>
-            <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
-              href="/src/gallery.html">Gallery</a>
+  <nav class="w-full z-10 bg-black/80 shadow-md">
+    <div class="container mx-auto px-6 md:px-4 lg:px-8 py-6">
+      <div class="flex items-center justify-between">
 
-            <!-- Button -->
-            <button class="bg-[#ff3131] text-white px-4 py-2 rounded-xl cursor-pointer md:py-2"><a
-                href="/src/contact.html">Contact Us</a></button>
-          </div>
-          <!-- Mobile Button -->
-          <div class="md:hidden">
-            <button id="mobile-nav" class="text-white text-6xl">
-              ☰
-            </button>
-          </div>
+        <!-- Logo -->
+        <div class="w-20">
+          <a id="home-logo" href="/src/index.html">
+            <img class="rounded-full cursor-pointer" src="/images/logo.png" alt="logo" href="/src/index.html" />
+          </a>
         </div>
-      </div>
-    </nav>
-    <!-------------------------------------------------- Mobile Menu -------------------------------------------------->
-    <div id="mobile-menu" class="hidden md:hidden bg-white/20 text-white p-6 h-5/6 rounded-xl">
-      <div class="flex flex-col items-center space-y-10">
-        <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
-          href="/src/index.html">Home</a>
-        <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
-          href="/src/index.html#services">Services</a>
-        <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
-          href="/src/menu.html">Menu</a>
-        <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
-          href="/src/about.html">About
-          Us</a>
-        <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
-          href="/src/gallery.html">Gallery</a>
+
+        <!-- Menu -->
+        <div class="hidden md:flex items-center space-x-8 md:space-x-4">
+          <a id="home-link"
+            class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg active-link"
+            href="/src/index.html">Home
+          </a>
+          <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
+            href="/src/index.html#services">Services
+          </a>
+          <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
+            href="/src/menu.html">Menu
+          </a>
+          <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
+            href="/src/about.html">About Us
+          </a>
+          <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
+            href="/src/gallery.html">Gallery</a>
+          <!-- Button -->
+          <button class="bg-[#ff3131] text-white px-4 py-2 rounded-xl cursor-pointer md:py-2">
+            <a href="/src/contact.html">Contact Us
+            </a>
+          </button>
+        </div>
+
         <!-- Mobile Button -->
-        <button class="bg-[#ff3131] text-white px-4 py-2 rounded-xl cursor-pointer block mt-2">Contact
-          Us</button>
+        <div class="md:hidden">
+          <button id="mobile-nav" class="text-white text-6xl">
+            ☰
+          </button>
+        </div>
+
       </div>
     </div>
+  </nav>
+  <!-------------------------------------------------- End of Navbar -------------------------------------------------->
+
+  <!-------------------------------------------------- Mobile Menu -------------------------------------------------->
+  <div id="mobile-menu" class="hidden md:hidden bg-white/20 text-white p-6 h-5/6 rounded-xl">
+    <!-- Flex Container for Menu Items -->
+    <div class="flex flex-col items-center space-y-10">
+      <!-- Home Link -->
+      <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
+        href="/src/index.html">Home
+      </a>
+      <!-- Services Link -->
+      <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
+        href="#services">Services
+      </a>
+      <!-- Menu Link -->
+      <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
+        href="/src/menu.html">Menu
+      </a>
+      <!-- About Us Link -->
+      <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
+        href="/src/about.html">About Us
+      </a>
+      <!-- Gallery Link -->
+      <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
+        href="/src/gallery.html">Gallery
+      </a>
+      <!-- Contact Us Button -->
+      <button class="bg-[#ff3131] text-white px-4 py-2 rounded-xl cursor-pointer block mt-2">
+        Contact Us
+      </button>
+    </div>
+  </div>
     <!-------------------------------------------------- End of Mobile Menu -------------------------------------------------->
 
     <!--First text-->
@@ -121,9 +141,9 @@
     </div>
 
     <!--Footer beginning-->
-    <footer class="bg-neutral-200 text-center text-white dark:bg-neutral-600 flex justify-center ">
+    <footer class="bg-black/60 text-center text-white dark:bg-neutral-600 flex justify-center ">
       <div class="container pt-10">
-        <div class="mb-10 flex justify-center">
+        <div class="mb-10 flex justify-center ml-10">
           <a href="" class="mr-10 text-neutral-800 dark:text-neutral-200">
             <i class="fa-brands fa-facebook-f" style="color: #f7f7f8;"></i>
           </a>
@@ -137,11 +157,11 @@
       </div>
     </footer>
     <!-------------------------------------------------- End of Footer -------------------------------------------------->
-
+  
     <!-------------------------------------------------- Copyright -------------------------------------------------->
-    <div class="bg-neutral-300 p-4 text-center text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200">
+    <div class="bg-black/80 p-4 text-center text-white dark:bg-neutral-700 dark:text-neutral-200">
       © 2023 Copyright:
-      <a class="text-neutral-800 dark:text-neutral-400">Crumb Pizza</a>
+      <a class="text-white dark:text-neutral-400">Crumb Pizza</a>
     </div>
 
 

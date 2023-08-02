@@ -15,7 +15,7 @@
 }
 
 
-body {
+#GalleryBody {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -33,23 +33,28 @@ footer {
 #contactH3 {
     font-family: var(--heading-font);
     font-size: x-large;
-    color: #FF3131;
+    color: black;
 
 }
 
-#contactForm {
-    margin-top: 80px;
+#ContactFormContainer {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .label {
     display: block;
-    margin-left: 20px;
+    font-family: var(--normal-font);
+    font-size: larger;
+    padding-right: 30px;
 
 }
 
 .inputBox {
     width: 95%;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     margin-left: 20px;
     border-radius: 4px;
     padding: 6px;
@@ -60,9 +65,7 @@ footer {
 
 .eventTime {
     margin-left: 20px;
-    border-radius: 4px;
     padding: 2px;
-    margin-bottom: 2px;
 }
 
 #mobilePrefix {
@@ -76,12 +79,6 @@ footer {
 
 }
 
-#ContactH5 {
-    font-family: var(--heading-font);
-    font-size: xx-large;
-    color: #FF3131;
-
-}
 
 #ContactH3 {
     font-family: var(--accent-font);
@@ -112,14 +109,12 @@ textarea {
 }
 
 .gallery-item {
-    margin: 10px;
-    width: 100%;
-    max-width: 250px;
+    margin: 5px;
+    max-width: 100%;
     border: solid;
     color: grey;
-    padding: 4px;
+    padding: 5px;
     border-radius: 10px;
-
 
 }
 
@@ -167,7 +162,7 @@ textarea {
     font-size: small;
 }
 
-@media(min-width; 768px){
+@media(min-width: 768px){
     .gallery-item{
         max-width: 350px;
     }

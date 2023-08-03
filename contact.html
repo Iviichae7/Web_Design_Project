@@ -95,10 +95,17 @@
   </div>
   <!-------------------------------------------------- End of Mobile Menu -------------------------------------------------->
 
+  <!-------------------------------------------------- Contact Page Intro-------------------------------------------------->
+
   <div id="ContactCard">
     <h3 id="contactH3">Why not request a Quote for Our Mobile Pizza Catering Service!</h3>
 
   </div>
+
+    <!----------------------------------------------- End of Contact Page Intro --------------------------------------------->
+
+    <!----------------------------------------------------- Contact Form ---------------------------------------------------->
+
 
   <div id="ContactFormContainer">
 
@@ -108,16 +115,19 @@
 
       <table>
 
+        //Name input
         <tr>
           <td><label class="label">Name</label></td>
           <td><input type="text" class=inputBox id="name" name="Contact-name" placeholder="Name" size="30px"></td>
         </tr>
 
+        //Email input
         <tr>
           <td><label class="label">Email</label></td>
           <td><input type="email" class=inputBox id="email" name="Contact-email" placeholder="email"></td>
         </tr>
 
+        //Mobile prefix selection
         <tr>
           <td><label class="label">Mobile Prefix</label></td>
           <td>
@@ -127,10 +137,10 @@
               <option>086</option>
               <option>087</option>
             </select>
-
           </td>
         </tr>
 
+        //Mobile number input
         <tr>
           <td><label class="label">Mobile Number</label></td>
           <td>
@@ -139,12 +149,15 @@
           </td>
         </tr>
 
+        //Event address input
         <tr>
           <td><label class="label">Event Address</label></td>
           <td><input type="text" class=inputBox id="address" name="Event-address" placeholder="Event Address"
               size="70px">
           </td>
         </tr>
+
+        //Eircode input
         <tr>
           <td><label class="label">Eircode</label></td>
           <td><input type="text" class=inputBox id="eircode" name="Event-eircode" placeholder="7-digit Event Eircode"
@@ -152,14 +165,15 @@
           </td>
         </tr>
 
+        //Event date
         <tr>
           <td><label class="label">Event Date</label></td>
           <td><input type="date" class=inputBox id="date" name="Event-date"></td>
         </tr>
 
+        //Event time slection - radio buttons
         <tr>
           <td><label class="label">Event Time</label></td>
-
           <td>
             <input type="radio" class="eventTime" name="Event-time" value="Morning" required />
             <label>Morning</label><br>
@@ -170,9 +184,9 @@
             <input type="radio" class="eventTime" name="Event-time" value="Night" required />
             <label>Night (from 8pm)</label>
           </td>
-
         </tr>
 
+        //Event type selection
         <tr>
           <td>
             <label><label class="label">Type of Event</label></label>
@@ -186,28 +200,30 @@
               <option value="Birthday">Birthday</option>
               <option value="Other">Other</option>
             </select>
-
           </td>
-
         </tr>
 
+        //Number of adults input
         <tr>
           <td><label class="label">Number of Adults</label></td>
           <td><input type="number" class=inputBox name="Number of adults" required /></td>
         </tr>
+
+        //Number of childern input
         <tr>
           <td><label class="label">Number of Children</label></td>
           <td><input type="number" class=inputBox name="Number of Children" required /></td>
         </tr>
 
+        //Comment box for other relevant details
         <tr>
-
           <td><label class="label">Other relevant details</label></td>
           <td>
             <textarea cols="30" rows="10" class=inputBox name="Other relevant information"></textarea>
           </td>
         </tr>
 
+        //Submit button
         <tr>
           <td><label class="label">Get a quote</label></td>
           <td><input type="submit" class=inputBox value="Click here to request a quote"></td>
@@ -220,6 +236,8 @@
     </form>
 
   </div>
+
+  <!----------------------------------------------------- End of Contact Form ---------------------------------------------------->
 
   <div id="returnMessage" style="display: none;">
     Thank you for submitting your event details. <br>

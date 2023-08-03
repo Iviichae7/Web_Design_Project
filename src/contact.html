@@ -9,10 +9,9 @@
   <script src="https://kit.fontawesome.com/64688bc44b.js" crossorigin="anonymous"></script>
   <link href="/dist/output.css" rel="stylesheet" />
 
-  <script defer src="contactScript.js"></script>
   <script defer src="/src/main.js"></script>
 
-  <link rel="stylesheet" href="inputbl.css">
+  <link rel="stylesheet" href="input.css">
 </head>
 
 <body id="ContactBody">
@@ -106,120 +105,123 @@
   <div id="ContactFormContainer">
 
 
-  <form id="contactForm" action="mailto:crumbpizza@gmail.com" method="post" enctype="text/plain"
-    onsubmit="return validateInput()">
+    <form id="contactForm" action="mailto:crumbpizza@gmail.com" method="post" enctype="text/plain"
+      onsubmit="return validateInput()">
 
-    <table>
+      <table>
 
-      <tr>
-        <td><label class="label">Name</label></td>
-        <td><input type="text" class=inputBox id="name" name="Contact-name" placeholder="Name" size="30px"></td>
-      </tr>
+        <tr>
+          <td><label class="label">Name</label></td>
+          <td><input type="text" class=inputBox id="name" name="Contact-name" placeholder="Name" size="30px"></td>
+        </tr>
 
-      <tr>
-        <td><label class="label">Email</label></td>
-        <td><input type="email" class=inputBox id="email" name="Contact-email" placeholder="email"></td>
-      </tr>
+        <tr>
+          <td><label class="label">Email</label></td>
+          <td><input type="email" class=inputBox id="email" name="Contact-email" placeholder="email"></td>
+        </tr>
 
-      <tr>
-        <td><label class="label">Mobile Prefix</label></td>
-        <td>
-          <select id="mobilePrefix" class=inputBox name="Mobile-prefix" required>
-            <option value="" disabled selected>Select a prefix</option>
-            <option>085</option>
-            <option>086</option>
-            <option>087</option>
-          </select>
-          
-        </td>
-      </tr>
+        <tr>
+          <td><label class="label">Mobile Prefix</label></td>
+          <td>
+            <select id="mobilePrefix" class=inputBox name="Mobile-prefix" required>
+              <option value="" disabled selected>Select a prefix</option>
+              <option>085</option>
+              <option>086</option>
+              <option>087</option>
+            </select>
 
-      <tr>
-        <td><label class="label">Mobile Number</label></td>
-        <td>
-        <input type="text" class=inputBox id="mobileNumber" placeholder="7-digit Mobile Number" name="Mobile-number">
-      </td>
-      </tr>
+          </td>
+        </tr>
 
-      <tr>
-        <td><label class="label">Event Address</label></td>
-        <td><input type="text" class=inputBox id="address" name="Event-address" placeholder="Event Address" size="70px">
-        </td>
-      </tr>
-      <tr>
-        <td><label class="label">Eircode</label></td>
-        <td><input type="text" class=inputBox id="eircode" name="Event-eircode" placeholder="7-digit Event Eircode" size="10px">
-        </td>
-      </tr>
+        <tr>
+          <td><label class="label">Mobile Number</label></td>
+          <td>
+            <input type="text" class=inputBox id="mobileNumber" placeholder="7-digit Mobile Number"
+              name="Mobile-number">
+          </td>
+        </tr>
 
-      <tr>
-        <td><label class="label">Event Date</label></td>
-        <td><input type="date" class=inputBox id="date" name="Event-date"></td>
-      </tr>
+        <tr>
+          <td><label class="label">Event Address</label></td>
+          <td><input type="text" class=inputBox id="address" name="Event-address" placeholder="Event Address"
+              size="70px">
+          </td>
+        </tr>
+        <tr>
+          <td><label class="label">Eircode</label></td>
+          <td><input type="text" class=inputBox id="eircode" name="Event-eircode" placeholder="7-digit Event Eircode"
+              size="10px">
+          </td>
+        </tr>
 
-      <tr>
-        <td><label class="label">Event Time</label></td>
+        <tr>
+          <td><label class="label">Event Date</label></td>
+          <td><input type="date" class=inputBox id="date" name="Event-date"></td>
+        </tr>
 
-        <td>
-          <input type="radio" class="eventTime" name="Event-time" value="Morning" required />
-          <label>Morning</label><br>
-          <input type="radio" class="eventTime" name="Event-time" value="Afternoon" required />
-          <label>Afternoon</label><br>
-          <input type="radio" class="eventTime" name="Event-time" value="Evening" required />
-          <label>Evening</label><br>
-          <input type="radio" class="eventTime" name="Event-time" value="Night" required />
-          <label>Night (from 8pm)</label>
-        </td>
+        <tr>
+          <td><label class="label">Event Time</label></td>
 
-      </tr>
+          <td>
+            <input type="radio" class="eventTime" name="Event-time" value="Morning" required />
+            <label>Morning</label><br>
+            <input type="radio" class="eventTime" name="Event-time" value="Afternoon" required />
+            <label>Afternoon</label><br>
+            <input type="radio" class="eventTime" name="Event-time" value="Evening" required />
+            <label>Evening</label><br>
+            <input type="radio" class="eventTime" name="Event-time" value="Night" required />
+            <label>Night (from 8pm)</label>
+          </td>
 
-      <tr>
-        <td>
-          <label><label class="label">Type of Event</label></label>
-        </td>
+        </tr>
 
-        <td>
-          <select id="eventType" class=inputBox Name="Event-type" required>
-            <option value="" disabled selected>Select an event type</option>
-            <option value="Corporate">Corporate</option>
-            <option value="Wedding">Wedding</option>
-            <option value="Birthday">Birthday</option>
-            <option value="Other">Other</option>
-          </select>
+        <tr>
+          <td>
+            <label><label class="label">Type of Event</label></label>
+          </td>
 
-        </td>
+          <td>
+            <select id="eventType" class=inputBox Name="Event-type" required>
+              <option value="" disabled selected>Select an event type</option>
+              <option value="Corporate">Corporate</option>
+              <option value="Wedding">Wedding</option>
+              <option value="Birthday">Birthday</option>
+              <option value="Other">Other</option>
+            </select>
 
-      </tr>
+          </td>
 
-      <tr>
-        <td><label class="label">Number of Adults</label></td>
-        <td><input type="number" class=inputBox name="Number of adults" required /></td>
-      </tr>
-      <tr>
-        <td><label class="label">Number of Children</label></td>
-        <td><input type="number" class=inputBox name="Number of Children" required /></td>
-      </tr>
+        </tr>
 
-      <tr>
+        <tr>
+          <td><label class="label">Number of Adults</label></td>
+          <td><input type="number" class=inputBox name="Number of adults" required /></td>
+        </tr>
+        <tr>
+          <td><label class="label">Number of Children</label></td>
+          <td><input type="number" class=inputBox name="Number of Children" required /></td>
+        </tr>
 
-        <td><label class="label">Other relevant details</label></td>
-        <td>
-          <textarea cols="30" rows="10" class=inputBox name="Other relevant information"></textarea>
-        </td>
-      </tr>
+        <tr>
 
-      <tr>
-        <td><label class="label">Get a quote</label></td>
-        <td><input type="submit" class=inputBox value="Click here to request a quote"></td>
+          <td><label class="label">Other relevant details</label></td>
+          <td>
+            <textarea cols="30" rows="10" class=inputBox name="Other relevant information"></textarea>
+          </td>
+        </tr>
 
-      </tr>
+        <tr>
+          <td><label class="label">Get a quote</label></td>
+          <td><input type="submit" class=inputBox value="Click here to request a quote"></td>
+
+        </tr>
 
 
-    </table>
+      </table>
 
-  </form>
+    </form>
 
-</div>
+  </div>
 
   <div id="returnMessage" style="display: none;">
     Thank you for submitting your event details. <br>

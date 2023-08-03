@@ -10,19 +10,21 @@
   /* 300 */
   --accent-font: "Inconsolata", sans-serif;
 
-  --background-colour: linear-gradient(to right top,
-      #ffffff,
-      #f1dffa,
-      #f3bbe8,
-      #fc93c4,
-      #ff6790,
-      #ff6172,
-      #ff624f,
-      #ff6b26,
-      #ff8b26,
-      #ffa82f,
-      #ffc441,
-      #ffde59);
+  --background-colour: linear-gradient(
+    to right top,
+    #ffffff,
+    #f1dffa,
+    #f3bbe8,
+    #fc93c4,
+    #ff6790,
+    #ff6172,
+    #ff624f,
+    #ff6b26,
+    #ff8b26,
+    #ffa82f,
+    #ffc441,
+    #ffde59
+  );
 }
 
 .active-link {
@@ -36,19 +38,21 @@
   --normal-font: "Inconsolata", sans-serif;
   --heading-font: "Inconsolata", sans-serif;
   --accent-font: "Inconsolata", sans-serif;
-  --background-colour: linear-gradient(to right top,
-      #ffffff,
-      #f1dffa,
-      #f3bbe8,
-      #fc93c4,
-      #ff6790,
-      #ff6172,
-      #ff624f,
-      #ff6b26,
-      #ff8b26,
-      #ffa82f,
-      #ffc441,
-      #ffde59);
+  --background-colour: linear-gradient(
+    to right top,
+    #ffffff,
+    #f1dffa,
+    #f3bbe8,
+    #fc93c4,
+    #ff6790,
+    #ff6172,
+    #ff624f,
+    #ff6b26,
+    #ff8b26,
+    #ffa82f,
+    #ffc441,
+    #ffde59
+  );
 }
 
 /*Start of menu.html-Cian O'Connor*/
@@ -68,19 +72,19 @@
   font-family: var(--heading-font);
   font-weight: bold;
   position: relative;
-  color: white!important;
+  color: white !important;
 }
 
 /*Opening Text*/
 .Menu_Description {
   font-family: var(--normal-font);
-  color: white!important;
+  color: white !important;
 }
 
 /*Text box*/
 .Menu_box {
   border: 2px solid black;
-  padding: 30px!important;
+  padding: 30px !important;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.8);
   position: sticky;
@@ -95,16 +99,16 @@
   font-family: var(--heading-font);
   font-weight: bold;
   position: relative;
-  color: #ffde59!important;
+  color: #ffde59 !important;
 }
 
 /*Menu styling*/
-.Menu_Marg, 
-.Menu_Pep, 
-.Menu_Ruc, 
-.Menu_Sweet, 
-.Menu_Gar, 
-.Allergens, 
+.Menu_Marg,
+.Menu_Pep,
+.Menu_Ruc,
+.Menu_Sweet,
+.Menu_Gar,
+.Allergens,
 .Menu_img h1 {
   font-size: 20px;
   font-family: var(--header-font);
@@ -154,16 +158,24 @@
 
 /* Responsive Styling for menu.html */
 @media only screen and (max-width: 768px) {
-  .Menu_Welcome, .Menu_Header {
+  .Menu_Welcome,
+  .Menu_Header {
     font-size: 24px;
   }
 
-  .Menu_Description, .Menu_Marg, .Menu_Pep, .Menu_Ruc, .Menu_Sweet, .Menu_Gar, .Allergens, .Menu_img h1 {
+  .Menu_Description,
+  .Menu_Marg,
+  .Menu_Pep,
+  .Menu_Ruc,
+  .Menu_Sweet,
+  .Menu_Gar,
+  .Allergens,
+  .Menu_img h1 {
     font-size: 18px;
   }
 
   .Menu_text {
-    padding-bottom: 200px!important;
+    padding-bottom: 200px !important;
     padding: 30px;
     font-size: medium;
     line-height: 2;
@@ -230,7 +242,6 @@
   float: left;
 }
 
-
 /*Last text on page*/
 .Final_Text h1 {
   font-family: var(--accent-font);
@@ -238,7 +249,7 @@
   font-weight: bolder;
   text-align: center;
   font-size: 30px;
-  margin-bottom: 200px
+  margin-bottom: 200px;
 }
 /*Styling for Images*/
 .Story_img img,
@@ -256,7 +267,9 @@
 
 /* Responsive Styling */
 @media (max-width: 769px) {
-  .Story_Text, .Biz_Text, .Tully_Text {
+  .Story_Text,
+  .Biz_Text,
+  .Tully_Text {
     display: block;
   }
   .Story_Text .heading,
@@ -272,13 +285,152 @@
   .Tully_Text h1 {
     font-size: 20px;
     font-family: var(--heading-font);
-  }  
+  }
   .Story_Text .paragraph,
   .Biz_Text .paragraph,
   .Tully_Text .paragraph {
     padding-top: 30px;
-  } 
- }
+  }
+}
 
 /*End of menu.html-Cian O'Connor*/
 
+/* Beginning of -Breda Logan */
+
+#GalleryBody {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  width: 100%;
+}
+
+#ContactCard {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#contactH3 {
+  font-family: var(--heading-font);
+  font-size: x-large;
+  color: black;
+}
+
+#ContactFormContainer {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.label {
+  display: block;
+  font-family: var(--normal-font);
+  font-size: larger;
+  padding-right: 30px;
+}
+
+.inputBox {
+  width: 95%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+  border-radius: 4px;
+  padding: 6px;
+  border-width: 3px;
+  border-color: gray;
+}
+
+.eventTime {
+  margin-left: 20px;
+  padding: 2px;
+}
+
+#mobilePrefix {
+  width: fit-content;
+}
+
+#ContactCard {
+  text-align: center;
+  padding: 20px;
+}
+
+#ContactH3 {
+  font-family: var(--accent-font);
+  font-size: x-large;
+  color: #ff3131;
+}
+
+#returnMessage {
+  text-align: center;
+  font-family: var(--accent-font);
+  font-size: x-large;
+  color: #ff3131;
+}
+
+textarea {
+  border-radius: 4px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.gallery-item {
+  margin: 5px;
+  max-width: 100%;
+  border: solid;
+  color: grey;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#choiceText {
+  font-family: var(--normal-font);
+  font-style: italic;
+  font-size: 24px;
+  color: #ff3131;
+  text-align: center;
+  padding: 10px;
+}
+
+#GalleryContiner {
+  background-color: white;
+}
+
+#GalleryCard {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#GalleryH3 {
+  font-family: var(--heading-font);
+  font-size: xx-large;
+  color: #ff3131;
+}
+
+#GalleryH5 {
+  font-family: var(--accent-font);
+  font-size: x-large;
+}
+
+.imageText {
+  text-align: center;
+  font-size: small;
+}
+
+@media (min-width: 768px) {
+  .gallery-item {
+    max-width: 350px;
+  }
+}

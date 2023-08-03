@@ -115,19 +115,19 @@
 
       <table>
 
-        //Name input
+        <!--Name input-->
         <tr>
           <td><label class="label">Name</label></td>
           <td><input type="text" class=inputBox id="name" name="Contact-name" placeholder="Name" size="30px"></td>
         </tr>
 
-        //Email input
+        <!--Email input-->
         <tr>
           <td><label class="label">Email</label></td>
           <td><input type="email" class=inputBox id="email" name="Contact-email" placeholder="email"></td>
         </tr>
 
-        //Mobile prefix selection
+        <!--Mobile prefix selection-->
         <tr>
           <td><label class="label">Mobile Prefix</label></td>
           <td>
@@ -140,7 +140,7 @@
           </td>
         </tr>
 
-        //Mobile number input
+        <!--Mobile number input-->
         <tr>
           <td><label class="label">Mobile Number</label></td>
           <td>
@@ -149,7 +149,7 @@
           </td>
         </tr>
 
-        //Event address input
+        <!--Event address input-->
         <tr>
           <td><label class="label">Event Address</label></td>
           <td><input type="text" class=inputBox id="address" name="Event-address" placeholder="Event Address"
@@ -157,7 +157,7 @@
           </td>
         </tr>
 
-        //Eircode input
+        <!--Eircode input-->
         <tr>
           <td><label class="label">Eircode</label></td>
           <td><input type="text" class=inputBox id="eircode" name="Event-eircode" placeholder="7-digit Event Eircode"
@@ -165,13 +165,13 @@
           </td>
         </tr>
 
-        //Event date
+        <!--Event date-->
         <tr>
           <td><label class="label">Event Date</label></td>
           <td><input type="date" class=inputBox id="date" name="Event-date"></td>
         </tr>
 
-        //Event time slection - radio buttons
+        <!--Event time slection - radio buttons-->
         <tr>
           <td><label class="label">Event Time</label></td>
           <td>
@@ -186,7 +186,7 @@
           </td>
         </tr>
 
-        //Event type selection
+        <!--Event type selection-->
         <tr>
           <td>
             <label><label class="label">Type of Event</label></label>
@@ -203,19 +203,19 @@
           </td>
         </tr>
 
-        //Number of adults input
+        <!--Number of adults input-->
         <tr>
           <td><label class="label">Number of Adults</label></td>
           <td><input type="number" class=inputBox name="Number of adults" required /></td>
         </tr>
 
-        //Number of childern input
+        <!--Number of childern input-->
         <tr>
           <td><label class="label">Number of Children</label></td>
           <td><input type="number" class=inputBox name="Number of Children" required /></td>
         </tr>
 
-        //Comment box for other relevant details
+        <!--Comment box for other relevant details-->
         <tr>
           <td><label class="label">Other relevant details</label></td>
           <td>
@@ -223,7 +223,7 @@
           </td>
         </tr>
 
-        //Submit button
+        <!--Submit button-->
         <tr>
           <td><label class="label">Get a quote</label></td>
           <td><input type="submit" class=inputBox value="Click here to request a quote"></td>
@@ -239,11 +239,70 @@
 
   <!----------------------------------------------------- End of Contact Form ---------------------------------------------------->
 
+  <!------------------------------------------ Display message on contact form submission ---------------------------------------->
+
+
   <div id="returnMessage" style="display: none;">
     Thank you for submitting your event details. <br>
     Your details will have populated in an email ready to send to Crumb Pizza. <br>
     Please click send and we will be in contact soon.
   </div>
+
+  <!---------------------------------------- End of Display message on contact form submission ------------------------------------>
+
+  <!---------------------------------------------- Inline JSS for optimisation ---------------------------------------------------->
+
+  <script>
+    function validateInput(){
+
+const contactName = document.getElementById("name");
+
+if(contactName.value.length<4){
+    alert("Please enter a valid name");
+    return false;
+}
+
+const contactEmail = document.getElementById("email");
+if(contactEmail.value==""){
+    alert("Please enter your email address");
+    return false;
+}
+
+const contactNumber = document.getElementById("mobileNumber");
+if(contactNumber.value.length!=7){
+    alert("Please enter a valid 7 digit mobile number");
+    return false;
+}
+
+const eventAddress = document.getElementById("address");
+if(eventAddress.value.length<10){
+    alert("Please enter the full address of the event");
+    return false;
+}
+
+const eventEircode = document.getElementById("eircode");
+if(eventEircode.value.length<7 || eventEircode.value.length>8){
+    alert("Please enter a valid 7 character eircode")
+    return false;
+}
+
+const eventDate = document.getElementById("date");
+
+if(eventDate.value==""){
+    alert("Please enter the date of your event")
+    return false;
+}
+
+const form = document.getElementById("contactForm");
+  form.style.display="none";
+
+  const returnMessage = document.getElementById("returnMessage");
+  returnMessage.style.display="block";
+      
+}
+  </script>
+
+  <!---------------------------------------------- End of Inline JSS for optimisation ---------------------------------------------------->
 
   <!-------------------------------------------------- Footer -------------------------------------------------->
   <footer class="bg-black/60 text-center text-white dark:bg-neutral-600 flex justify-center ">

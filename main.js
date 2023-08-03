@@ -15,8 +15,10 @@ const setVideoSpeed = () => {
 // Function for mobile menu and if mobile menu is open
 const toggleMobileMenu = () => {
   const mobileMenu = document.getElementById('mobile-menu');
+  const mobile = document.getElementById('mobile');
   if (mobileMenu) {
     mobileMenu.classList.toggle('hidden');
+    mobile.classList.toggle('hidden');
   }
 }
 

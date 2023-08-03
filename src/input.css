@@ -9,57 +9,17 @@
   --heading-font: "Inconsolata", sans-serif;
   /* 300 */
   --accent-font: "Inconsolata", sans-serif;
-
-  --background-colour: linear-gradient(
-    to right top,
-    #ffffff,
-    #f1dffa,
-    #f3bbe8,
-    #fc93c4,
-    #ff6790,
-    #ff6172,
-    #ff624f,
-    #ff6b26,
-    #ff8b26,
-    #ffa82f,
-    #ffc441,
-    #ffde59
-  );
 }
 
 .active-link {
   color: #ff3131;
   border: 2px solid #ff3131;
 }
-
-/* Background image */
-:root {
-  /* Fonts and gradient */
-  --normal-font: "Inconsolata", sans-serif;
-  --heading-font: "Inconsolata", sans-serif;
-  --accent-font: "Inconsolata", sans-serif;
-  --background-colour: linear-gradient(
-    to right top,
-    #ffffff,
-    #f1dffa,
-    #f3bbe8,
-    #fc93c4,
-    #ff6790,
-    #ff6172,
-    #ff624f,
-    #ff6b26,
-    #ff8b26,
-    #ffa82f,
-    #ffc441,
-    #ffde59
-  );
-}
-
 /*Start of menu.html-Cian O'Connor*/
 
 /*Background image*/
 .First_Page {
-  background-image: url("images/IMG_0107.jpeg");
+  background-image: url("../images/IMG_0107.jpeg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -296,8 +256,6 @@
 /*End of menu.html-Cian O'Connor*/
 
 /* Beginning of -Breda Logan */
-
-
 
 footer {
   width: 100%;

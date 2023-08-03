@@ -20,145 +20,143 @@
 
 <body id="GalleryBody">
   <!-------------------------------------------------- Navbar -------------------------------------------------->
-  <div class="absolute left-0 right-0 flex flex-col justify-between h-full">
-    <nav class="w-full z-10 bg-black/80 shadow-md">
-      <div class="container mx-auto px-6 md:px-4 lg:px-8 py-6">
-        <div class="flex items-center justify-between">
+  <nav class="w-full z-10 bg-black/80 shadow-md">
+    <div class="container mx-auto px-6 md:px-4 lg:px-8 py-6">
+      <div class="flex items-center justify-between">
 
-          <!-- Logo -->
-          <div class="w-20">
-            <a id="home-logo" href="index.html">
-              <img class="rounded-full cursor-pointer" src="images/logo.png" alt="logo" />
-            </a>
-          </div>
-
-          <!-- Menu -->
-          <div class="hidden md:flex items-center space-x-8 md:space-x-4">
-            <a id="home-link"
-              class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg active-link"
-              href="index.html">Home
-            </a>
-            <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
-              href="index.html#services">Services
-            </a>
-            <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
-              href="menu.html">Menu
-            </a>
-            <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
-              href="about.html">About Us
-            </a>
-            <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
-              href="gallery.html">Gallery</a>
-            <!-- Button -->
-            <button class="bg-[#ff3131] text-white px-4 py-2 rounded-xl cursor-pointer md:py-2">
-              <a href="contact.html">Contact Us
-              </a>
-            </button>
-          </div>
-          <!-- Mobile Button -->
-          <div class="md:hidden">
-            <button id="mobile-nav" class="text-white text-6xl">
-              ☰
-            </button>
-          </div>
-
+        <!-- Logo -->
+        <div class="w-20">
+          <a id="home-logo" href="index.html">
+            <img class="rounded-full cursor-pointer" src="images/logo.png" alt="logo" />
+          </a>
         </div>
-      </div>
-    </nav>
-    <!-------------------------------------------------- End of Navbar -------------------------------------------------->
-    <!-------------------------------------------------- Mobile Menu -------------------------------------------------->
-    <div id="mobile-menu" class="hidden md:hidden bg-white/20 text-white p-6 h-5/6 rounded-xl">
-      <!-- Flex Container for Menu Items -->
-      <div class="flex flex-col items-center space-y-10">
-        <!-- Home Link -->
-        <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
-          href="index.html">Home
-        </a>
-        <!-- Services Link -->
-        <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
-          href="#services">Services
-        </a>
-        <!-- Menu Link -->
-        <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
-          href="menu.html">Menu
-        </a>
-        <!-- About Us Link -->
-        <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
-          href="about.html">About Us
-        </a>
-        <!-- Gallery Link -->
-        <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
-          href="gallery.html">Gallery
-        </a>
-        <!-- Contact Us Button -->
-        <a href="contact.html">
-          <button class="bg-[#ff3131] text-white px-4 py-2 rounded-xl cursor-pointer block mt-2">
-            Contact Us
+
+        <!-- Menu -->
+        <div class="hidden md:flex items-center space-x-8 md:space-x-4">
+          <a id="home-link"
+            class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg active-link"
+            href="index.html">Home
+          </a>
+          <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
+            href="index.html#services">Services
+          </a>
+          <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
+            href="menu.html">Menu
+          </a>
+          <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
+            href="about.html">About Us
+          </a>
+          <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
+            href="gallery.html">Gallery</a>
+          <!-- Button -->
+          <button class="bg-[#ff3131] text-white px-4 py-2 rounded-xl cursor-pointer md:py-2">
+            <a href="contact.html">Contact Us
+            </a>
           </button>
-        </a>
+        </div>
+        <!-- Mobile Button -->
+        <div class="md:hidden">
+          <button id="mobile-nav" class="text-white text-6xl">
+            ☰
+          </button>
+        </div>
+
       </div>
     </div>
-    <!-------------------------------------------------- End of Mobile Menu -------------------------------------------------->
-    <div class="container-md">
-
-      <div id="GalleryCard">
-        <h3 id="GalleryH3">Photo Gallery</h3>
-        <h5 id="GalleryH5">Crumb Pizza's</h5>
-      </div>
-
-      <div>
-
-        <p id="choiceText"></p>
-
-      </div>
-
-      <div class="gallery-container">
-
-        <div class="gallery-item">
-          <img src="images/IMG_0107.jpg" alt="Image2" onclick="showText('Irresistible Melted Cheese!')">
-          <p class="imageText">Click the image</p>
-        </div>
-
-        <div class="gallery-item">
-          <img src="images/IMG_0399.jpg" alt="Image4" onclick="showText('Universal Crowd Pleaser!')">
-          <p class="imageText">Click the image</p>
-        </div>
-
-        <div class="gallery-item">
-          <img src="images/IMG_0602.jpg" alt="Image5" onclick="showText('Heavenly Aromas!')">
-          <p class="imageText">Click the image</p>
-        </div>
-
-        <div class="gallery-item">
-          <img src="images/IMG_9499.jpg" alt="Image6" onclick="showText('Iconic Italian Tradition!')">
-          <p class="imageText">Click the image</p>
-        </div>
-      </div>
-
-      <!-------------------------------------------------- Footer -------------------------------------------------->
-      <footer class="bg-black/60 text-center text-white dark:bg-neutral-600 flex justify-center ">
-        <div class="container pt-10">
-          <div class="mb-10 flex justify-center ml-10">
-            <a href="" class="mr-10 text-neutral-800 dark:text-neutral-200">
-              <i class="fa-brands fa-facebook-f" style="color: #f7f7f8;"></i>
-            </a>
-            <a href="" class="mr-10 text-neutral-800 dark:text-neutral-200">
-              <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
-            </a>
-            <a href="" class="mr-10 text-neutral-800 dark:text-neutral-200">
-              <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-            </a>
-          </div>
-        </div>
-      </footer>
-      <!-------------------------------------------------- End of Footer -------------------------------------------------->
-      <!-------------------------------------------------- Copyright -------------------------------------------------->
-      <div class="bg-black/80 p-4 text-center text-white dark:bg-neutral-700 dark:text-neutral-200">
-        © 2023 Copyright:
-        <a class="text-white dark:text-neutral-400">Crumb Pizza</a>
-      </div>
-      <!-------------------------------------------------- End of Copyright -------------------------------------------------->
+  </nav>
+  <!-------------------------------------------------- End of Navbar -------------------------------------------------->
+  <!-------------------------------------------------- Mobile Menu -------------------------------------------------->
+  <div id="mobile-menu" class="hidden md:hidden bg-black/30 text-white p-6 h-screen z-50 rounded-xl">
+    <!-- Flex Container for Menu Items -->
+    <div class="flex flex-col items-center space-y-10 pt-32">
+      <!-- Home Link -->
+      <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
+        href="index.html">Home
+      </a>
+      <!-- Services Link -->
+      <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
+        href="#services">Services
+      </a>
+      <!-- Menu Link -->
+      <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
+        href="menu.html">Menu
+      </a>
+      <!-- About Us Link -->
+      <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
+        href="about.html">About Us
+      </a>
+      <!-- Gallery Link -->
+      <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
+        href="gallery.html">Gallery
+      </a>
+      <!-- Contact Us Button -->
+      <button class="bg-[#ff3131] text-white px-4 py-2 rounded-xl cursor-pointer block mt-2">
+        Contact Us
+      </button>
     </div>
+  </div>
+  <!-------------------------------------------------- End of Mobile Menu -------------------------------------------------->
+  <div class="container-md">
+
+    <div id="GalleryCard">
+      <h3 id="GalleryH3">Photo Gallery</h3>
+      <h5 id="GalleryH5">Crumb Pizza's</h5>
+    </div>
+
+    <div>
+
+      <p id="choiceText"></p>
+
+    </div>
+
+    <div class="gallery-container">
+
+      <div class="gallery-item">
+        <img src="images/IMG_0107.jpg" alt="Image2" onclick="showText('Irresistible Melted Cheese!')">
+        <p class="imageText">Click the image</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/IMG_0399.jpg" alt="Image4" onclick="showText('Universal Crowd Pleaser!')">
+        <p class="imageText">Click the image</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/IMG_0602.jpg" alt="Image5" onclick="showText('Heavenly Aromas!')">
+        <p class="imageText">Click the image</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/IMG_9499.jpg" alt="Image6" onclick="showText('Iconic Italian Tradition!')">
+        <p class="imageText">Click the image</p>
+      </div>
+    </div>
+
+    <!-------------------------------------------------- Footer -------------------------------------------------->
+    <footer class="bg-black/60 text-center text-white dark:bg-neutral-600 flex justify-center ">
+      <div class="container pt-10">
+        <div class="mb-10 flex justify-center ml-10">
+          <a href="https://www.facebook.com/profile.php?id=100068913016329"
+            class="mr-10 text-neutral-800 dark:text-neutral-200">
+            <i class="fa-brands fa-facebook-f" style="color: #f7f7f8;"></i>
+          </a>
+          <a href="https://www.twitter.com/crumb_pizza/" class="mr-10 text-neutral-800 dark:text-neutral-200">
+            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+          </a>
+          <a href="https://www.instagram.com/crumb_pizza/" class="mr-10 text-neutral-800 dark:text-neutral-200">
+            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-------------------------------------------------- End of Footer -------------------------------------------------->
+    <!-------------------------------------------------- Copyright -------------------------------------------------->
+    <div class="bg-black/80 p-4 text-center text-white dark:bg-neutral-700 dark:text-neutral-200">
+      © 2023 Copyright:
+      <a class="text-white dark:text-neutral-400">Crumb Pizza</a>
+    </div>
+    <!-------------------------------------------------- End of Copyright -------------------------------------------------->
+  </div>
 </body>
 
 </html>

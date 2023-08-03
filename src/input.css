@@ -297,11 +297,7 @@
 
 /* Beginning of -Breda Logan */
 
-#GalleryBody {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+
 
 footer {
   width: 100%;
@@ -373,6 +369,12 @@ textarea {
   border-radius: 4px;
 }
 
+#GalleryBody {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 .gallery-container {
   display: flex;
   flex-wrap: wrap;
@@ -404,10 +406,6 @@ textarea {
   padding: 10px;
 }
 
-#GalleryContiner {
-  background-color: white;
-}
-
 #GalleryCard {
   margin-top: 40px;
   text-align: center;
@@ -431,6 +429,6 @@ textarea {
 
 @media (min-width: 768px) {
   .gallery-item {
-    max-width: 350px;
+    max-width: calc(25% - 10px);
   }
 }

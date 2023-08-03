@@ -193,14 +193,11 @@
 
 /*Beginning of about.html-Cian O'Connor*/
 
-.Story_Text .heading h1,
-.Biz_Text .heading h1,
-.Tully_Text .heading h1 {
+.Story_Text .heading,
+.Biz_Text .heading,
+.Tully_Text .heading {
   font-family: var(--heading-font);
   width: 50%;
-  margin-left: 70px;
-  margin-top: 30px;
-  float: left;
 }
 
 /*Style for main paragraphs*/
@@ -220,12 +217,17 @@
   padding-top: 200px;
 }
 
+/*Our Story heading */
+.Story_Text h1 {
+  margin-top: 200px;
+  font-size: 300%;
+  float: left;
+}
 /*Main header styling */
-.Story_Text h1,
 .Biz_Text h1,
 .Tully_Text h1 {
-  position: relative;
   font-size: 300%;
+  float: left;
 }
 
 

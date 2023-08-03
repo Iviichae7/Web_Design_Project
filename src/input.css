@@ -59,7 +59,7 @@
 
 /*Background image*/
 .First_Page {
-  background-image: url("../images/IMG_0107.jpeg");
+  background-image: url("/images/IMG_0107.jpeg");
   background-size: cover;
   background-position: center;
   width: 100%;

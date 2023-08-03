@@ -183,7 +183,6 @@ function showText(text) {
   choiceText.textContent = text;
 }
 
-//Contact Page Code - Breda
 
 
 

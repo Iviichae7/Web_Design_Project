@@ -145,14 +145,7 @@ guessButton.addEventListener('click', () => {
   }
 });
 
-//Script to display image text in Gallery
 
-function showText(text) {
-
-  var choiceText = document.getElementById("choiceText");
-
-  choiceText.textContent = text;
-}
 
 //scroll to see menu button
 
@@ -175,10 +168,26 @@ function scrollDown() {
   });
 }
 
+/*Breda's code*/
+
+
+
+//Script to display image text in Gallery
+
+function showText(text) {
+
+  var choiceText = document.getElementById("choiceText");
+
+  choiceText.textContent = text;
+}
+
+//Contact Page Code - Breda
+
+
+
 function validateInput(){
 
   const contactName = document.getElementById("name");
-  
 
   if(contactName.value.length<4){
       alert("Please enter a valid name");

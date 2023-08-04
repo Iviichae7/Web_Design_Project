@@ -1167,7 +1167,7 @@ video {
 /*Background image*/
 
 .First_Page {
-  background-image: url("../images/IMG_0107.jpeg");
+  background-image: url("../images/background.webp");
   background-size: cover;
   background-position: center;
   width: 100%;

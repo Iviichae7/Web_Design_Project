@@ -244,62 +244,71 @@
 
   <div id="returnMessage" style="display: none;">
     Thank you for submitting your event details. <br>
-    Your details will have populated in an email ready to send to Crumb Pizza. <br>
-    Please click send and we will be in contact soon.
+    Your details have populated in an email ready to go to Crumb Pizza. <br>
+    Please click send, and we will be in contact soon.
   </div>
 
   <!---------------------------------------- End of Display message on contact form submission ------------------------------------>
 
   <!---------------------------------------------- Inline JSS for optimisation ---------------------------------------------------->
 
+
   <script>
+
+    //validate input before submission
     function validateInput(){
 
-const contactName = document.getElementById("name");
+    //check the name has a minimum of 4 characters
+    const contactName = document.getElementById("name");
+    if(contactName.value.length<4){
+      alert("Please enter a valid name");
+      return false;
+    }
 
-if(contactName.value.length<4){
-    alert("Please enter a valid name");
-    return false;
-}
+    //check the email has been inputted
+    const contactEmail = document.getElementById("email");
+      if(contactEmail.value==""){
+      alert("Please enter your email address");
+      return false;
+    }
 
-const contactEmail = document.getElementById("email");
-if(contactEmail.value==""){
-    alert("Please enter your email address");
-    return false;
-}
+    //check the mobile number is 7 digits long (prefix is required in html)
+    const contactNumber = document.getElementById("mobileNumber");
+      if(contactNumber.value.length!=7){
+      alert("Please enter a valid 7 digit mobile number");
+     return false;
+    }
 
-const contactNumber = document.getElementById("mobileNumber");
-if(contactNumber.value.length!=7){
-    alert("Please enter a valid 7 digit mobile number");
-    return false;
-}
+    //check the address is at least 10 characters long
+    const eventAddress = document.getElementById("address");
+      if(eventAddress.value.length<10){
+       alert("Please enter the full address of the event");
+       return false;
+    }
+    
+    //check the eircode is between 7 and 8 digits long (8 digits allows for a space)
+    const eventEircode = document.getElementById("eircode");
+      if(eventEircode.value.length<7 || eventEircode.value.length>8){
+      alert("Please enter a valid 7 character eircode")
+      return false;
+    }
 
-const eventAddress = document.getElementById("address");
-if(eventAddress.value.length<10){
-    alert("Please enter the full address of the event");
-    return false;
-}
+    //check an event date has been entered
+    const eventDate = document.getElementById("date");
+    if(eventDate.value==""){
+      alert("Please enter the date of your event")
+      return false;
+    }
 
-const eventEircode = document.getElementById("eircode");
-if(eventEircode.value.length<7 || eventEircode.value.length>8){
-    alert("Please enter a valid 7 character eircode")
-    return false;
-}
+    //hide the contact form on form submission
+    const form = document.getElementById("contactForm");
+    form.style.display="none";
 
-const eventDate = document.getElementById("date");
-
-if(eventDate.value==""){
-    alert("Please enter the date of your event")
-    return false;
-}
-
-const form = document.getElementById("contactForm");
-  form.style.display="none";
-
-  const returnMessage = document.getElementById("returnMessage");
-  returnMessage.style.display="block";
+    //display a message to the user on submission
+    const returnMessage = document.getElementById("returnMessage");
+    returnMessage.style.display="block";
       
-}
+    }
   </script>
 
   <!---------------------------------------------- End of Inline JSS for optimisation ---------------------------------------------------->

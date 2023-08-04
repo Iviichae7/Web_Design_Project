@@ -261,23 +261,29 @@ footer {
   width: 100%;
 }
 
+/* Contact us page style */
+
+/* Contact page introduction text div */
 #ContactCard {
   margin-top: 40px;
   text-align: center;
 }
 
+/* Contact page introduction text */
 #contactH3 {
   font-family: var(--heading-font);
   font-size: x-large;
   color: black;
 }
 
+/* Contact form div */
 #ContactFormContainer {
   margin: 20px;
   display: flex;
   justify-content: center;
 }
 
+/* Label class styling */
 .label {
   display: block;
   font-family: var(--normal-font);
@@ -285,6 +291,7 @@ footer {
   padding-right: 30px;
 }
 
+/* Input box class styling */
 .inputBox {
   width: 95%;
   margin-bottom: 10px;
@@ -296,6 +303,7 @@ footer {
   border-color: gray;
 }
 
+/* Event time class styling */
 .eventTime {
   margin-left: 20px;
   padding: 2px;
@@ -321,12 +329,15 @@ footer {
   font-family: var(--accent-font);
   font-size: x-large;
   color: #ff3131;
+  margin-bottom: 80px;
 }
 
 textarea {
   border-radius: 4px;
 }
 
+
+/* Gallery Page Styling */
 #GalleryBody {
   display: flex;
   min-height: 100vh;

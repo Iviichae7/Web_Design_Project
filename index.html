@@ -2,14 +2,16 @@
 <html lang="en">
 
 <head>
-  <script src="https://kit.fontawesome.com/64688bc44b.js" crossorigin="anonymous"></script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="description" content="mobile pizza located in tullys bar">
+  <meta name="keywords" content="pizza, peperroni, cheap, carlow, tullys">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="src/input.css">
+  <link rel="icon" href="images/logo-modified.png" alt="icon">
   <title>Crumb Pizza</title>
-  <link rel="icon" href="images/logo-modified.png">
-  <script defer src="main.js"></script>
+
   <!--link to google fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,168 +22,171 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;700&family=Mukta&display=swap">
-
+  <!--link to Scripts-->
+  <script src="https://kit.fontawesome.com/64688bc44b.js" crossorigin="anonymous"></script>
+  <script defer src="main.js"></script>
 </head>
 
 <body>
   <!-------------------------------------------------- Hero Page -------------------------------------------------->
-  <!-- Video Background -->
-  <div class="relative min-h-screen">
-    <video autoplay muted loop id="myVideo" class="absolute w-full h-full object-cover">
-      <source src="images/Video.mp4" type="video/mp4" />
-    </video>
+  <main>
+    <!-- Video Background -->
+    <div class="relative min-h-screen">
+      <video autoplay muted loop id="myVideo" class="absolute w-full h-full object-cover">
+        <source src="images/Video.mp4" type="video/mp4" />
+      </video>
 
 
-    <div class="absolute left-0 right-0 flex flex-col justify-between h-full">
-      <!-------------------------------------------------- Navbar -------------------------------------------------->
-      <nav class="w-full z-10 bg-black/80 shadow-md">
-        <div class="container mx-auto px-6 md:px-4 lg:px-8 py-6">
-          <div class="flex items-center justify-between">
+      <div class="absolute left-0 right-0 flex flex-col justify-between h-full">
+        <!-------------------------------------------------- Navbar -------------------------------------------------->
+        <nav class="w-full z-10 bg-black/80 shadow-md">
+          <div class="container mx-auto px-6 md:px-4 lg:px-8 py-6">
+            <div class="flex items-center justify-between">
 
-            <!-- Logo -->
-            <div class="w-20">
-              <a id="home-logo" href="index.html">
-                <img class="rounded-full cursor-pointer" src="images/logo.png" alt="logo" href="/src/index.html" />
-              </a>
+              <!-- Logo -->
+              <div class="w-20">
+                <a id="home-logo" href="index.html">
+                  <img class="rounded-full cursor-pointer" src="images/logo.png" alt="logo" href="/src/index.html" />
+                </a>
+              </div>
+
+              <!-- Menu -->
+              <div class="hidden md:flex items-center space-x-8 md:space-x-4">
+                <a id="home-link"
+                  class="text-white font-heading text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg active-link"
+                  href="index.html" title="Home">Home
+                </a>
+                <a class="text-white font-heading text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
+                  href="index.html#services" title="Services we offer">Services
+                </a>
+                <a class="text-white font-heading text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
+                  href="menu.html" title="Look at our menu">Menu
+                </a>
+                <a class="text-white font-heading text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
+                  href="about.html" title="Find out more about us">About Us
+                </a>
+                <a class="text-white font-heading text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
+                  href="gallery.html" title="Take a look at our gallery">Gallery</a>
+                <!-- Button -->
+                <button class="bg-[#ff3131] text-white px-4 py-2 rounded-xl cursor-pointer md:py-2">
+                  <a class="font-heading" href="contact.html" title="Contact us for more information">Contact Us
+                  </a>
+                </button>
+              </div>
+
+              <!-- Mobile Button -->
+              <div class="md:hidden">
+                <button id="mobile-nav" class="text-white text-6xl">
+                  ☰
+                </button>
+              </div>
+
             </div>
+          </div>
+        </nav>
+        <!-------------------------------------------------- End of Navbar -------------------------------------------------->
 
-            <!-- Menu -->
-            <div class="hidden md:flex items-center space-x-8 md:space-x-4">
-              <a id="home-link"
-                class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg active-link"
-                href="index.html">Home
-              </a>
-              <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
-                href="index.html#services">Services
-              </a>
-              <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
-                href="menu.html">Menu
-              </a>
-              <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
-                href="about.html">About Us
-              </a>
-              <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
-                href="gallery.html">Gallery</a>
-              <!-- Button -->
-              <button class="bg-[#ff3131] text-white px-4 py-2 rounded-xl cursor-pointer md:py-2">
-                <a href="contact.html">Contact Us
+        <!-------------------------------------------------- Mobile Menu -------------------------------------------------->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/20 text-white p-6 h-5/6 rounded-xl">
+          <!-- Flex Container for Menu Items -->
+          <div class="flex flex-col items-center space-y-10">
+            <!-- Home Link -->
+            <a class="block py-1 text-xl font-heading font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
+              href="index.html" title="Home">Home
+            </a>
+            <!-- Services Link -->
+            <a class="block py-1 text-xl font-heading font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
+              href="#services" title="Services we offer">Services
+            </a>
+            <!-- Menu Link -->
+            <a class="block py-1 text-xl font-heading font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
+              href="menu.html" title="Look at our menu">Menu
+            </a>
+            <!-- About Us Link -->
+            <a class="block py-1 text-xl font-heading font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
+              href="about.html" title="Find out more about us">About Us
+            </a>
+            <!-- Gallery Link -->
+            <a class="block py-1 text-xl font-heading font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
+              href="gallery.html" title="Take a look at our gallery">Gallery
+            </a>
+            <!-- Contact Us Button -->
+            <button class="bg-[#ff3131] font-heading text-white px-4 py-2 rounded-xl cursor-pointer block mt-2">
+              <a href="contact.html" title="Contact us for more information">Contact Us</a>
+            </button>
+          </div>
+        </div>
+        <!-------------------------------------------------- End of Mobile Menu -------------------------------------------------->
+
+        <!-------------------------------------------------- CTA -------------------------------------------------->
+        <div id="cta"
+          class=" text-white flex flex-col items-center text-center mx-auto transform -translate-y-1/2 md:absolute md:translate-y-0 md:top-1/2 md:left-1/4 md:text-left md:items-start md:flex-row md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-64 h-64">
+          <!-- Container -->
+          <div class="px-6 py-6 md:px-4">
+            <!-- Title -->
+            <h2 class="font-bold font-heading px-2">Crumb Pizza</h2>
+            <!-- Description -->
+            <p class="px-2 font-normal">Great time! Order now for fast delivery</p>
+            <!-- Buttons Container -->
+            <div class="flex justify-center space-x-4 mt-4">
+              <!-- Order Now Button -->
+              <button class="bg-[#ff3131] px-2 py-2 rounded-lg">
+                <a class="font-heading" href="contact.html">Order Now
+                </a>
+              </button>
+              <!-- View Menu Button -->
+              <button class="bg-[#ffffff] text-black px-2 py-2 rounded-lg">
+                <a href="menu.html#Second_Page">View Menu
                 </a>
               </button>
             </div>
+          </div>
+        </div>
+      </div>
+      <!-------------------------------------------------- End of CTA -------------------------------------------------->
 
-            <!-- Mobile Button -->
-            <div class="md:hidden">
-              <button id="mobile-nav" class="text-white text-6xl">
-                ☰
-              </button>
+      <!-------------------------------------------------- Hero Footer -------------------------------------------------->
+      <div class="absolute bottom-0 left-0 right-0 bg-black/80 shadow-md p-4">
+        <!-- Container for Footer Elements -->
+        <div class="flex flex-col md:flex-row justify-evenly items-center text-sm md:text-base lg:text-lg">
+          <!-- Contact Details Section -->
+          <div class="flex text-white space-x-8 mb-4 md:mb-0">
+            <!-- Phone Number Icon and Detail -->
+            <i class="fa-solid fa-phone cursor-pointer" style="color: #ffde59;"></i>
+            <p>Contact Number: <a href="tel:085-123-4545" style="color: white;">085-123-4545</a></p>
+            <!-- Location Icon and Detail -->
+            <i class="fa-solid fa-location-crosshairs cursor-pointer" style="color: #ffde59;"></i>
+            <p>Location: Street, Carlow, Ireland</p>
+            <!-- Opening Times Icon and Detail -->
+            <i class="fa-regular fa-clock cursor-pointer" style="color: #ffde59;"></i>
+            <p>Opening Times: 16:00 - 23:00 </p>
+          </div>
+
+          <!-- Social Media Icons Section -->
+          <div class="p-4 pl-20 pr-20">
+            <!-- Social Media Icons Container -->
+            <div class="flex flex-row text-center">
+              <!-- Facebook Icon -->
+              <a href="https://www.facebook.com/profile.php?id=100068913016329"
+                class="mr-10 text-neutral-800 dark:text-neutral-200">
+                <i class="fa-brands fa-facebook-f" style="color: #f7f7f8;"></i>
+              </a>
+              <!-- Twitter Icon -->
+              <a href="https://www.twitter.com/crumb_pizza/" class="mr-10 text-neutral-800 dark:text-neutral-200">
+                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+              </a>
+              <!-- Instagram Icon -->
+              <a href="https://www.instagram.com/crumb_pizza/" class=" text-neutral-800 dark:text-neutral-200">
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+              </a>
             </div>
-
-          </div>
-        </div>
-      </nav>
-      <!-------------------------------------------------- End of Navbar -------------------------------------------------->
-
-      <!-------------------------------------------------- Mobile Menu -------------------------------------------------->
-      <div id="mobile-menu" class="hidden md:hidden bg-white/20 text-white p-6 h-5/6 rounded-xl">
-        <!-- Flex Container for Menu Items -->
-        <div class="flex flex-col items-center space-y-10">
-          <!-- Home Link -->
-          <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
-            href="index.html">Home
-          </a>
-          <!-- Services Link -->
-          <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
-            href="#services">Services
-          </a>
-          <!-- Menu Link -->
-          <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
-            href="menu.html">Menu
-          </a>
-          <!-- About Us Link -->
-          <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
-            href="about.html">About Us
-          </a>
-          <!-- Gallery Link -->
-          <a class="block py-1 text-xl font-bold px-4 hover:bg-[#ffde59] hover:text-white hover:px-4 rounded-lg"
-            href="gallery.html">Gallery
-          </a>
-          <!-- Contact Us Button -->
-          <button class="bg-[#ff3131] text-white px-4 py-2 rounded-xl cursor-pointer block mt-2">
-            Contact Us
-          </button>
-        </div>
-      </div>
-      <!-------------------------------------------------- End of Mobile Menu -------------------------------------------------->
-
-      <!-------------------------------------------------- CTA -------------------------------------------------->
-      <div id="cta"
-        class=" text-white flex flex-col items-center text-center mx-auto transform -translate-y-1/2 md:absolute md:translate-y-0 md:top-1/2 md:left-1/4 md:text-left md:items-start md:flex-row md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-64 h-64">
-        <!-- Container -->
-        <div class="px-6 py-6 md:px-4">
-          <!-- Title -->
-          <h2 class="font-bold px-2">Crumb Pizza</h2>
-          <!-- Description -->
-          <p class="px-2">Great time! Order now for fast delivery</p>
-          <!-- Buttons Container -->
-          <div class="flex justify-center space-x-4 mt-4">
-            <!-- Order Now Button -->
-            <button class="bg-[#ff3131] px-2 py-2 rounded-lg">
-              <a href="contact.html">Order Now
-              </a>
-            </button>
-            <!-- View Menu Button -->
-            <button class="bg-[#ffffff] text-black px-2 py-2 rounded-lg">
-              <a href="menu.html#Second_Page">View Menu
-              </a>
-            </button>
           </div>
         </div>
       </div>
     </div>
-    <!-------------------------------------------------- End of CTA -------------------------------------------------->
-
-    <!-------------------------------------------------- Hero Footer -------------------------------------------------->
-    <div class="absolute bottom-0 left-0 right-0 bg-black/80 shadow-md p-4">
-      <!-- Container for Footer Elements -->
-      <div class="flex flex-col md:flex-row justify-evenly items-center text-sm md:text-base lg:text-lg">
-        <!-- Contact Details Section -->
-        <div class="flex text-white space-x-8 mb-4 md:mb-0">
-          <!-- Phone Number Icon and Detail -->
-          <i class="fa-solid fa-phone cursor-pointer" style="color: #ffde59;"></i>
-          <p>Contact Number: <a href="tel:085-123-4545" style="color: white;">085-123-4545</a></p>
-          <!-- Location Icon and Detail -->
-          <i class="fa-solid fa-location-crosshairs cursor-pointer" style="color: #ffde59;"></i>
-          <p>Location: Street, Carlow, Ireland</p>
-          <!-- Opening Times Icon and Detail -->
-          <i class="fa-regular fa-clock cursor-pointer" style="color: #ffde59;"></i>
-          <p>Opening Times: 16:00 - 23:00 </p>
-        </div>
-
-        <!-- Social Media Icons Section -->
-        <div class="p-4 pl-20 pr-20">
-          <!-- Social Media Icons Container -->
-          <div class="flex flex-row text-center">
-            <!-- Facebook Icon -->
-            <a href="https://www.facebook.com/profile.php?id=100068913016329"
-              class="mr-10 text-neutral-800 dark:text-neutral-200">
-              <i class="fa-brands fa-facebook-f" style="color: #f7f7f8;"></i>
-            </a>
-            <!-- Twitter Icon -->
-            <a href="https://www.twitter.com/crumb_pizza/" class="mr-10 text-neutral-800 dark:text-neutral-200">
-              <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
-            </a>
-            <!-- Instagram Icon -->
-            <a href="https://www.instagram.com/crumb_pizza/" class=" text-neutral-800 dark:text-neutral-200">
-              <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-------------------------------------------------- End of Hero Footer -------------------------------------------------->
-  <!-------------------------------------------------- End of Hero Page -------------------------------------------------->
-
+    <!-------------------------------------------------- End of Hero Footer -------------------------------------------------->
+    <!-------------------------------------------------- End of Hero Page -------------------------------------------------->
+  </main>
   <!-------------------------------------------------- Services -------------------------------------------------->
   <div id="services" class="px-4 py-10 bg=[#fafafa] pb-20">
     <!-- Services Container -->
@@ -458,7 +463,6 @@
     <a class="text-white dark:text-neutral-400">Crumb Pizza</a>
   </div>
   <!-------------------------------------------------- End of Copyright -------------------------------------------------->
-
 </body>
 
 </html>

@@ -88,8 +88,8 @@
         href="gallery.html">Gallery
       </a>
       <!-- Contact Us Button -->
-      <button class="bg-[#ff3131] text-white px-4 py-2 rounded-xl cursor-pointer block mt-2">
-        Contact Us
+      <button class="bg-[#ff3131] font-heading text-white px-4 py-2 rounded-xl cursor-pointer block mt-2">
+        <a href="contact.html" title="Contact us for more information">Contact Us</a>
       </button>
     </div>
   </div>
@@ -102,9 +102,9 @@
 
   </div>
 
-    <!----------------------------------------------- End of Contact Page Intro --------------------------------------------->
+  <!----------------------------------------------- End of Contact Page Intro --------------------------------------------->
 
-    <!----------------------------------------------------- Contact Form ---------------------------------------------------->
+  <!----------------------------------------------------- Contact Form ---------------------------------------------------->
 
 
   <div id="ContactFormContainer">
@@ -254,60 +254,59 @@
 
 
   <script>
-
     //validate input before submission
-    function validateInput(){
+    function validateInput() {
 
-    //check the name has a minimum of 4 characters
-    const contactName = document.getElementById("name");
-    if(contactName.value.length<4){
-      alert("Please enter a valid name");
-      return false;
-    }
+      //check the name has a minimum of 4 characters
+      const contactName = document.getElementById("name");
+      if (contactName.value.length < 4) {
+        alert("Please enter a valid name");
+        return false;
+      }
 
-    //check the email has been inputted
-    const contactEmail = document.getElementById("email");
-      if(contactEmail.value==""){
-      alert("Please enter your email address");
-      return false;
-    }
+      //check the email has been inputted
+      const contactEmail = document.getElementById("email");
+      if (contactEmail.value == "") {
+        alert("Please enter your email address");
+        return false;
+      }
 
-    //check the mobile number is 7 digits long (prefix is required in html)
-    const contactNumber = document.getElementById("mobileNumber");
-      if(contactNumber.value.length!=7){
-      alert("Please enter a valid 7 digit mobile number");
-     return false;
-    }
+      //check the mobile number is 7 digits long (prefix is required in html)
+      const contactNumber = document.getElementById("mobileNumber");
+      if (contactNumber.value.length != 7) {
+        alert("Please enter a valid 7 digit mobile number");
+        return false;
+      }
 
-    //check the address is at least 10 characters long
-    const eventAddress = document.getElementById("address");
-      if(eventAddress.value.length<10){
-       alert("Please enter the full address of the event");
-       return false;
-    }
-    
-    //check the eircode is between 7 and 8 digits long (8 digits allows for a space)
-    const eventEircode = document.getElementById("eircode");
-      if(eventEircode.value.length<7 || eventEircode.value.length>8){
-      alert("Please enter a valid 7 character eircode")
-      return false;
-    }
+      //check the address is at least 10 characters long
+      const eventAddress = document.getElementById("address");
+      if (eventAddress.value.length < 10) {
+        alert("Please enter the full address of the event");
+        return false;
+      }
 
-    //check an event date has been entered
-    const eventDate = document.getElementById("date");
-    if(eventDate.value==""){
-      alert("Please enter the date of your event")
-      return false;
-    }
+      //check the eircode is between 7 and 8 digits long (8 digits allows for a space)
+      const eventEircode = document.getElementById("eircode");
+      if (eventEircode.value.length < 7 || eventEircode.value.length > 8) {
+        alert("Please enter a valid 7 character eircode")
+        return false;
+      }
 
-    //hide the contact form on form submission
-    const form = document.getElementById("contactForm");
-    form.style.display="none";
+      //check an event date has been entered
+      const eventDate = document.getElementById("date");
+      if (eventDate.value == "") {
+        alert("Please enter the date of your event")
+        return false;
+      }
 
-    //display a message to the user on submission
-    const returnMessage = document.getElementById("returnMessage");
-    returnMessage.style.display="block";
-      
+      //hide the contact form on form submission
+      const form = document.getElementById("contactForm");
+      form.style.display = "none";
+
+      //display a message to the user on submission
+      const returnMessage = document.getElementById("returnMessage");
+      returnMessage.style.display = "block";
+
     }
   </script>
 

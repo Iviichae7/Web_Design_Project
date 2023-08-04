@@ -194,12 +194,15 @@
   margin-top: 200px;
   font-size: 300%;
   float: left;
+  padding-left: 30px;
+  padding-bottom: 20px;
 }
 /*Main header styling */
 .Biz_Text h1,
 .Tully_Text h1 {
   font-size: 300%;
   float: left;
+  padding-left: 30px;
 }
 
 /*Last text on page*/
@@ -215,7 +218,7 @@
 .Story_img img,
 .Biz_img img,
 .Tully_img img {
-  width: 70%;
+  width: 90%;
   height: 800px;
   display: block;
   margin: 0 auto;
@@ -223,27 +226,28 @@
   margin-top: 200px;
   margin-bottom: 200px;
   border-radius: 20px;
+  padding: 6px;
+  border-width: 3px;
+  border-color: gray;
 }
 
 /* Responsive Styling */
 @media (max-width: 769px) {
-  .Story_Text,
-  .Biz_Text,
-  .Tully_Text {
-    display: block;
-  }
   .Story_Text .heading,
   .Biz_Text .heading,
   .Tully_Text .heading,
   .Story_Text .paragraph,
   .Biz_Text .paragraph,
   .Tully_Text .paragraph {
-    margin: 10px;
+    margin: 20px;
+    width: 100%;
+    padding-left: 30px;
+    text-align: center;
   }
   .Story_Text h1,
   .Biz_Text h1,
   .Tully_Text h1 {
-    font-size: 20px;
+    font-size: 30px;
     font-family: var(--heading-font);
   }
   .Story_Text .paragraph,
@@ -251,6 +255,17 @@
   .Tully_Text .paragraph {
     padding-top: 30px;
   }
+
+  .Story_Text .first_par {
+    padding-top: 10px;
+  }
+
+  .Story_img img,
+.Biz_img img,
+.Tully_img img {
+  object-fit: contain;
+  height: auto;
+}
 }
 
 /*End of menu.html-Cian O'Connor*/

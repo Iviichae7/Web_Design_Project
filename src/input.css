@@ -270,13 +270,16 @@
 
 /*End of menu.html-Cian O'Connor*/
 
-/* Beginning of -Breda Logan */
+
+/* BEGINNING OF BREDA LOGAN */
+
+/*footer styling for all pages*/
 
 footer {
   width: 100%;
 }
 
-/* Contact us page style */
+/* CONTACT US PAGE STYLING */
 
 /* Contact page introduction text div */
 #ContactCard {
@@ -328,17 +331,24 @@ footer {
   width: fit-content;
 }
 
-#ContactCard {
-  text-align: center;
-  padding: 20px;
+/*Styling for the submit button to keep it similar to other input boxes*/
+.inputBoxButton {
+  width: 95%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+  border-radius: 4px;
+  padding: 6px;
+  border-width: 3px;
+  border-color: gray;
 }
 
-#ContactH3 {
-  font-family: var(--accent-font);
-  font-size: x-large;
-  color: #ff3131;
+/*Styling to change the colour of the submit button on hover*/
+.inputBoxButton:hover{
+  background-color: #ffde59;
 }
 
+/*Style for message which will appear on submission*/
 #returnMessage {
   text-align: center;
   font-family: var(--accent-font);
@@ -352,13 +362,21 @@ textarea {
 }
 
 
-/* Gallery Page Styling */
+/* GALLERY PAGE STYLING */
+
+
+
+
+
+
+/*Styling to ensure gallery contents are stacked vertical in a column and fill the view port*/
 #GalleryBody {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
 
+/*Create equal space around items in the container and wrap them to the next line to aid reponsiveness*/
 .gallery-container {
   display: flex;
   flex-wrap: wrap;
@@ -366,35 +384,13 @@ textarea {
   padding: 20px;
 }
 
-.gallery-item {
-  margin: 5px;
-  max-width: 100%;
-  border: solid;
-  color: grey;
-  padding: 5px;
-  border-radius: 10px;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-#choiceText {
-  font-family: var(--normal-font);
-  font-style: italic;
-  font-size: 24px;
-  color: #ff3131;
-  text-align: center;
-  padding: 10px;
-}
-
+/*Styling for the container for the introduction text*/
 #GalleryCard {
   margin-top: 40px;
   text-align: center;
 }
 
+/*Styling for the introduction text*/
 #GalleryH3 {
   font-family: var(--heading-font);
   font-size: xx-large;
@@ -406,10 +402,40 @@ textarea {
   font-size: x-large;
 }
 
+/*Container for the individual images, the max width aids reponsiveness*/
+.gallery-item {
+  margin: 5px;
+  max-width: 100%;
+  border: solid;
+  color: grey;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/*Styling for the image within the gallery-time, with 100% aids repsonsivness*/
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/*Stying for the text that is display when you click on an image*/
+#choiceText {
+  font-family: var(--normal-font);
+  font-style: italic;
+  font-size: 24px;
+  color: #ff3131;
+  text-align: center;
+  padding: 10px;
+}
+
+/*Styling for the click the image text*/
 .imageText {
   text-align: center;
   font-size: small;
 }
+
+/*Responsiveness with max-width calcuated at 25% to allow the 4 images on one line*/
 
 @media (min-width: 768px) {
   .gallery-item {

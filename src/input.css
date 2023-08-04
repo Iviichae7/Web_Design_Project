@@ -82,7 +82,7 @@
   left: 50%;
   transform: translateX(-50%);
   padding: 10px;
-  font-size: 1em;
+  font-size: 25px!important;
   color: white;
   background-color: #ff3131;
   border: none;

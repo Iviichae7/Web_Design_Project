@@ -98,7 +98,19 @@ document.addEventListener('DOMContentLoaded', () => {
     logoClick();
   });
   updateActiveLink();
+  
+  //scroll to see menu button
+  // Cian's code placed inside DOM Content loaded
+  document.getElementById('scrollButton').addEventListener('click', function() {
+    let menuSection = document.getElementById('Menu');
+    window.scrollTo({
+      top: menuSection.offsetTop,
+      behavior: 'smooth'
+    });
+  });
 });
+
+
 
 // Guessing game
 const secretNumber = Math.floor(Math.random() * 10) + 1;
@@ -147,28 +159,6 @@ guessButton.addEventListener('click', () => {
   }
 });
 
-
-
-//scroll to see menu button
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  let button = document.getElementsByClassName("scrollButton")[0];
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    button.style.display = "block";
-  } else {
-    button.style.display = "none";
-  }
-}
-
-function scrollDown() {
-  let secondPage = document.getElementById("Second_Page");
-  window.scrollTo({
-    top: secondPage.offsetTop,
-    behavior: 'smooth'
-  });
-}
 
 /*Breda's code*/
 

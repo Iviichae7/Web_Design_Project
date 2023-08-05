@@ -170,18 +170,13 @@ function scrollDown() {
   });
 }
 
-/*Breda's code*/
 
 
 
-//Script to display image text in Gallery
 
-function showText(text) {
 
-  var choiceText = document.getElementById("choiceText");
 
-  choiceText.textContent = text;
-}
+
 
 
 

@@ -14,7 +14,7 @@
 
 <body id="ContactBody">
 
-  <!-------------------------------------------------- Navbar -------------------------------------------------->
+<!----------------------------------------------------- Navbar ----------------------------------------------------->
   <nav class="w-full z-10 bg-black/80 shadow-md">
     <div class="container mx-auto px-6 md:px-4 lg:px-8 py-6">
       <div class="flex items-center justify-between">
@@ -33,7 +33,7 @@
             href="index.html">Home
           </a>
           <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
-            href="ndex.html#services">Services
+            href="index.html#services">Services
           </a>
           <a class="text-white text-xl hover:bg-white hover:text-black transition-colors duration-200 ease-in-out p-2 rounded-lg"
             href="menu.html">Menu
@@ -60,9 +60,9 @@
       </div>
     </div>
   </nav>
-  <!-------------------------------------------------- End of Navbar -------------------------------------------------->
+<!-------------------------------------------------- End of Navbar -------------------------------------------------->
 
-  <!-------------------------------------------------- Mobile Menu -------------------------------------------------->
+<!-------------------------------------------------- Mobile Menu -------------------------------------------------->
   <div id="mobile-menu" class="hidden md:hidden bg-black/30 text-white p-6 h-screen z-50 rounded-xl">
     <!-- Flex Container for Menu Items -->
     <div class="flex flex-col items-center space-y-10 pt-32">
@@ -92,18 +92,18 @@
       </button>
     </div>
   </div>
-  <!-------------------------------------------------- End of Mobile Menu -------------------------------------------------->
+<!-------------------------------------------------- End of Mobile Menu -------------------------------------------------->
 
-  <!-------------------------------------------------- Contact Page Intro-------------------------------------------------->
+<!-------------------------------------------------- Contact Page Intro-------------------------------------------------->
 
   <div id="ContactCard">
     <h3 id="contactH3">Why not request a Quote for Our Mobile Pizzeria Catering Service!</h3>
 
   </div>
 
-  <!----------------------------------------------- End of Contact Page Intro --------------------------------------------->
+<!----------------------------------------------- End of Contact Page Intro --------------------------------------------->
 
-  <!----------------------------------------------------- Contact Form ---------------------------------------------------->
+<!----------------------------------------------------- Contact Form ---------------------------------------------------->
 
 
   <div id="ContactFormContainer">
@@ -232,9 +232,9 @@
     </form>
   </div>
 
-  <!----------------------------------------------------- End of Contact Form ---------------------------------------------------->
+<!----------------------------------------------------- End of Contact Form ---------------------------------------------------->
 
-  <!------------------------------------------ Display message on contact form submission ---------------------------------------->
+<!------------------------------------------ Display message on contact form submission ---------------------------------------->
 
 
   <div id="returnMessage" style="display: none;">
@@ -243,11 +243,11 @@
     Please click send, and we will be in contact soon.
   </div>
 
-  <!---------------------------------------- End of Display message on contact form submission ------------------------------------>
+<!---------------------------------------- End of Display message on contact form submission ------------------------------------>
 
 
 
-  <!-------------------------------------------------- Footer -------------------------------------------------->
+<!-------------------------------------------------- Footer -------------------------------------------------->
   <footer class="bg-black/60 text-center text-white dark:bg-neutral-600 flex justify-center ">
     <div class="container pt-10">
       <div class="mb-10 flex justify-center ml-10">
@@ -264,77 +264,79 @@
       </div>
     </div>
   </footer>
-  <!-------------------------------------------------- End of Footer -------------------------------------------------->
+<!-------------------------------------------------- End of Footer -------------------------------------------------->
 
-  <!-------------------------------------------------- Copyright -------------------------------------------------->
+<!-------------------------------------------------- Copyright -------------------------------------------------->
   <div class="bg-black/80 p-4 text-center text-white dark:bg-neutral-700 dark:text-neutral-200">
     © 2023 Copyright:
     <a class="text-white dark:text-neutral-400">Crumb Pizza</a>
   </div>
-  <!-------------------------------------------------- End of Copyright -------------------------------------------------->
+<!-------------------------------------------------- End of Copyright -------------------------------------------------->
 
-</body>
 
   <!---------------------------------------------- Inline JSS for optimisation ---------------------------------------------------->
 
-
-  <script>
-    //validate input before submission
-    function validateInput() {
-
-      //check the name has a minimum of 4 characters
-      const contactName = document.getElementById("name");
-      if (contactName.value.length < 4) {
-        alert("Please enter a valid name");
-        return false;
+    <script>
+      //validate input before submission
+      function validateInput() {
+  
+        //check the name has a minimum of 4 characters
+        const contactName = document.getElementById("name");
+        if (contactName.value.length < 4) {
+          alert("Please enter a valid name");
+          return false;
+        }
+  
+        //check the email has been inputted
+        const contactEmail = document.getElementById("email");
+        if (contactEmail.value == "") {
+          alert("Please enter your email address");
+          return false;
+        }
+  
+        //check the mobile number is 7 digits long (prefix is required in html)
+        const contactNumber = document.getElementById("mobileNumber");
+        if (contactNumber.value.length != 7) {
+          alert("Please enter a valid 7 digit mobile number");
+          return false;
+        }
+  
+        //check the address is at least 10 characters long
+        const eventAddress = document.getElementById("address");
+        if (eventAddress.value.length < 10) {
+          alert("Please enter the full address of the event");
+          return false;
+        }
+  
+        //check the eircode is between 7 and 8 digits long (8 digits allows for a space)
+        const eventEircode = document.getElementById("eircode");
+        if (eventEircode.value.length < 7 || eventEircode.value.length > 8) {
+          alert("Please enter a valid 7 character eircode")
+          return false;
+        }
+  
+        //check an event date has been entered
+        const eventDate = document.getElementById("date");
+        if (eventDate.value == "") {
+          alert("Please enter the date of your event")
+          return false;
+        }
+  
+        //hide the contact form on form submission
+        const form = document.getElementById("contactForm");
+        form.style.display = "none";
+  
+        //display a message to the user on submission
+        const returnMessage = document.getElementById("returnMessage");
+        returnMessage.style.display = "block";
+  
       }
+    </script>
+  
+<!---------------------------------------------- End of Inline JSS for optimisation ---------------------------------------------------->
 
-      //check the email has been inputted
-      const contactEmail = document.getElementById("email");
-      if (contactEmail.value == "") {
-        alert("Please enter your email address");
-        return false;
-      }
+</body>
 
-      //check the mobile number is 7 digits long (prefix is required in html)
-      const contactNumber = document.getElementById("mobileNumber");
-      if (contactNumber.value.length != 7) {
-        alert("Please enter a valid 7 digit mobile number");
-        return false;
-      }
 
-      //check the address is at least 10 characters long
-      const eventAddress = document.getElementById("address");
-      if (eventAddress.value.length < 10) {
-        alert("Please enter the full address of the event");
-        return false;
-      }
-
-      //check the eircode is between 7 and 8 digits long (8 digits allows for a space)
-      const eventEircode = document.getElementById("eircode");
-      if (eventEircode.value.length < 7 || eventEircode.value.length > 8) {
-        alert("Please enter a valid 7 character eircode")
-        return false;
-      }
-
-      //check an event date has been entered
-      const eventDate = document.getElementById("date");
-      if (eventDate.value == "") {
-        alert("Please enter the date of your event")
-        return false;
-      }
-
-      //hide the contact form on form submission
-      const form = document.getElementById("contactForm");
-      form.style.display = "none";
-
-      //display a message to the user on submission
-      const returnMessage = document.getElementById("returnMessage");
-      returnMessage.style.display = "block";
-
-    }
-  </script>
-
-  <!---------------------------------------------- End of Inline JSS for optimisation ---------------------------------------------------->
 
 </html>
